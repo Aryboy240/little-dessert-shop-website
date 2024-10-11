@@ -1,0 +1,956 @@
+<head>
+  <title>Drinks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--JS-->
+    <script defer src="/js/theme.js"></script>
+    <script defer src="/js/ScrollReveal.js"></script>
+    <script src="/js/scrollreveal.min.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="/CSS/Main stylesheet.css" />
+    <link rel="stylesheet" href="/CSS/Rainbow CSS/RainbowText.css" />
+    <link rel="stylesheet" href="/CSS/ProductCard.css" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+      />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap"
+      rel="stylesheet"
+      />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Merriweather:ital,wght@1,300&family=Noto+Sans&family=Pacifico&family=Raleway&display=swap"
+      rel="stylesheet"
+      />
+    <!--Meta-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1,
+      user-scalable=0"
+      />
+    <meta name="Keywords" content="Dessert, Shop, Money, Store, Customer" />
+</head>
+  
+<body>
+    <!--Webpage Loading Animation-->
+    <section>
+      <div id="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+      <script type="text/javascript">
+        setInterval(function () {
+          if (document.readyState == "complete") {
+            document.getElementById("loader-wrapper").style.visibility = "hidden";
+          }
+        }, 100);
+      </script>
+    </section>
+    <!--Webpage Loading Animation End-->
+  
+    <!--Background-->
+    <section id="back-svg">
+      <svg
+        class="background"
+        id="visual"
+        viewBox="0 0 900 600"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+        preserveAspectRatio="none">
+        <path
+          d="M0 103L16.7 98C33.3 93 66.7 83 100 90C133.3 97 166.7 121 200
+          117C233.3 113 266.7 81 300 74C333.3 67 366.7 85 400 98C433.3 111 466.7
+          119 500 120C533.3 121 566.7 115 600 105C633.3 95 666.7 81 700 86C733.3
+          91 766.7 115 800 123C833.3 131 866.7 123 883.3 119L900 115L900 0L883.3
+          0C866.7 0 833.3 0 800 0C766.7 0 733.3 0 700 0C666.7 0 633.3 0 600
+          0C566.7 0 533.3 0 500 0C466.7 0 433.3 0 400 0C366.7 0 333.3 0 300
+          0C266.7 0 233.3 0 200 0C166.7 0 133.3 0 100 0C66.7 0 33.3 0 16.7 0L0 0Z"
+          fill="#6198ff"></path>
+        <path
+          d="M0 241L16.7 234C33.3 227 66.7 213 100 240C133.3 267 166.7 335 200
+          354C233.3 373 266.7 343 300 317C333.3 291 366.7 269 400 260C433.3 251
+          466.7 255 500 264C533.3 273 566.7 287 600 277C633.3 267 666.7 233 700
+          230C733.3 227 766.7 255 800 262C833.3 269 866.7 255 883.3 248L900
+          241L900 113L883.3 117C866.7 121 833.3 129 800 121C766.7 113 733.3 89 700
+          84C666.7 79 633.3 93 600 103C566.7 113 533.3 119 500 118C466.7 117 433.3
+          109 400 96C366.7 83 333.3 65 300 72C266.7 79 233.3 111 200 115C166.7 119
+          133.3 95 100 88C66.7 81 33.3 91 16.7 96L0 101Z"
+          fill="#2d77ff"></path>
+        <path
+          d="M0 421L16.7 426C33.3 431 66.7 441 100 459C133.3 477 166.7 503 200
+          501C233.3 499 266.7 469 300 465C333.3 461 366.7 483 400 486C433.3 489
+          466.7 473 500 472C533.3 471 566.7 485 600 479C633.3 473 666.7 447 700
+          438C733.3 429 766.7 437 800 446C833.3 455 866.7 465 883.3 470L900
+          475L900 239L883.3 246C866.7 253 833.3 267 800 260C766.7 253 733.3 225
+          700 228C666.7 231 633.3 265 600 275C566.7 285 533.3 271 500 262C466.7
+          253 433.3 249 400 258C366.7 267 333.3 289 300 315C266.7 341 233.3 371
+          200 352C166.7 333 133.3 265 100 238C66.7 211 33.3 225 16.7 232L0 239Z"
+          fill="#005de8"></path>
+        <path
+          d="M0 601L16.7 601C33.3 601 66.7 601 100 601C133.3 601 166.7 601 200
+          601C233.3 601 266.7 601 300 601C333.3 601 366.7 601 400 601C433.3 601
+          466.7 601 500 601C533.3 601 566.7 601 600 601C633.3 601 666.7 601 700
+          601C733.3 601 766.7 601 800 601C833.3 601 866.7 601 883.3 601L900
+          601L900 473L883.3 468C866.7 463 833.3 453 800 444C766.7 435 733.3 427
+          700 436C666.7 445 633.3 471 600 477C566.7 483 533.3 469 500 470C466.7
+          471 433.3 487 400 484C366.7 481 333.3 459 300 463C266.7 467 233.3 497
+          200 499C166.7 501 133.3 475 100 457C66.7 439 33.3 429 16.7 424L0 419Z"
+          fill="#004cbb"></path>
+      </svg>
+    </section>
+    <!--Background End-->
+  
+    <!--Navigation  Bar-->
+    <section>
+      <nav class="navbar" class="nav-theme">
+        <ul class="navbar-nav">
+          <!--Navigation Icons-->
+          <li class="logo">
+            <a href="#1" class="nav-link">
+              <span class="link-text logo-text">Navigation</span>
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fad"
+                data-icon="angle-double-right"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x">
+                <g class="fa-group">
+                  <path
+                    fill="currentColor"
+                    d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32
+                    386.36a23.94
+                    23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1
+                    0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88
+                    239a23.94
+                    23.94 0 0 1 .1 34z"
+                    class="fa-secondary"></path>
+                  <path
+                    fill="currentColor"
+                    d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224
+                    386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94
+                    23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79
+                    0L416
+                    239a24 24 0 0 1-.11 34z"
+                    class="fa-primary"></path>
+                </g>
+              </svg>
+            </a>
+          </li>
+  
+          <!--Home Page Icon-->
+          <li class="nav-item">
+            <a href="/Index.html" class="nav-link">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="home"
+                class="svg-inline--fa fa-home fa-w-18"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512">
+                >
+                <g class="fa-group">
+                  <path
+                    fill="currentColor"
+                    d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16
+                    16l112.06-.29a16
+                    16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16
+                    16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0
+                    16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6
+                    251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12
+                    12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0
+                    0-1.6
+                    16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19
+                    0
+                    0
+                    1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0
+                    0-1.7-16.93z"
+                    class="fa-secondary"></path>
+                </g>
+              </svg>
+              <span class="link-text">Home</span>
+            </a>
+          </li>
+  
+          <!--Menu Page Icon-->
+          <li class="nav-item">
+            <a href="Menu.html" class="nav-link">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="utensils"
+                class="svg-inline--fa fa-utensils fa-w-13"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 416 512">
+                <g class="fa-group">
+                  <path
+                    fill="currentColor"
+                    d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8
+                    89.6-68.9
+                    104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7
+                    0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0
+                    109.6
+                    15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4
+                    15.1
+                    3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9
+                    0
+                    .2
+                    2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6
+                    44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9
+                    26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5
+                    0-221.4
+                    178.5-64.9 300.9z"
+                    class="fa-secondary"></path>
+                </g>
+              </svg>
+              <span class="link-text">Menu</span>
+            </a>
+          </li>
+  
+          <!--Drinks Page Icon-->
+          <li class="nav-item">
+            <a href="/Drinks.html" class="nav-link">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="coffee"
+                class="svg-inline--fa fa-coffee fa-w-20"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 512">
+                > >
+                <g class="fa-group">
+                  <path
+                    fill="currentColor"
+                    d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4
+                    128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53
+                    43
+                    96
+                    96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64
+                    64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0
+                    11.8
+                    64-35.9 64z"
+                    class="fa-secondary"></path>
+                </g>
+              </svg>
+              <span class="link-text">Drinks</span>
+            </a>
+          </li>
+  
+          <!--Birthday Event Page Icon-->
+          <li class="nav-item">
+            <a href="/Birthday.html" class="nav-link">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="birthday-cake"
+                class="svg-inline--fa fa-birthday-cake fa-w-14"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512">
+                <g class="fa-group">
+                  <path
+                    fill="currentColor"
+                    d="M448 384c-28.02 0-31.26-32-74.5-32-43.43 0-46.825
+                    32-74.75
+                    32-27.695 0-31.454-32-74.75-32-42.842 0-47.218 32-74.5
+                    32-28.148
+                    0-31.202-32-74.75-32-43.547 0-46.653 32-74.75 32v-80c0-26.5
+                    21.5-48
+                    48-48h16V112h64v144h64V112h64v144h64V112h64v144h16c26.5
+                    0 48 21.5 48 48v80zm0 128H0v-96c43.356 0 46.767-32 74.75-32
+                    27.951 0 31.253 32 74.75 32 42.843 0 47.217-32 74.5-32
+                    28.148
+                    0
+                    31.201 32 74.75 32 43.357 0 46.767-32 74.75-32 27.488 0
+                    31.252
+                    32 74.5 32v96zM96 96c-17.75 0-32-14.25-32-32 0-31 32-23
+                    32-64
+                    12
+                    0 32 29.5 32 56s-14.25 40-32 40zm128 0c-17.75
+                    0-32-14.25-32-32
+                    0-31 32-23 32-64 12 0 32 29.5 32 56s-14.25 40-32 40zm128
+                    0c-17.75 0-32-14.25-32-32 0-31 32-23 32-64 12 0 32 29.5 32
+                    56s-14.25 40-32 40z"
+                    class="fa-secondary"></path>
+                </g>
+              </svg>
+              <span class="link-text">Birthday</span>
+            </a>
+          </li>
+  
+          <!--Loyalty Card Page Icon-->
+          <li class="nav-item">
+            <a href="/Login.html" class="nav-link">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="address-card"
+                class="svg-inline--fa fa-address-card fa-w-18"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512">
+                <g class="fa-group">
+                  <path
+                    fill="currentColor"
+                    d="M528 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48
+                    48h480c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-352
+                    96c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64
+                    64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H86.4C74 384 64
+                    375.4
+                    64 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8
+                    39.8
+                    8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2zM512
+                    312c0
+                    4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8
+                    8-8h144c4.4
+                    0
+                    8 3.6 8 8v16zm0-64c0 4.4-3.6 8-8 8H360c-4.4
+                    0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8
+                    8v16zm0-64c0
+                    4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8
+                    8-8h144c4.4
+                    0
+                    8 3.6 8 8v16z"
+                    class="fa-secondary"></path>
+                </g>
+              </svg>
+              <span class="link-text">Loyalty</span>
+            </a>
+          </li>
+  
+          <!--Store Location Page Icon-->
+          <li class="nav-item">
+            <a href="/Store.html" class="nav-link">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="store-alt"
+                class="svg-inline--fa fa-store-alt fa-w-20"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 512">
+                <g class="fa-group">
+                  <path
+                    fill="currentColor"
+                    d="M320 384H128V224H64v256c0 17.7 14.3 32 32 32h256c17.7 0
+                    32-14.3
+                    32-32V224h-64v160zm314.6-241.8l-85.3-128c-6-8.9-16-14.2-26.7-14.2H117.4c-10.7
+                    0-20.7 5.3-26.6 14.2l-85.3 128c-14.2 21.3 1 49.8 26.6
+                    49.8H608c25.5 0 40.7-28.5 26.6-49.8zM512 496c0 8.8 7.2 16 16
+                    16h32c8.8 0 16-7.2 16-16V224h-64v272z"
+                    class="fa-secondary"></path>
+                </g>
+              </svg>
+              <span class="link-text">Store</span>
+            </a>
+          </li>
+  
+          <!--Feedback Page Icon-->
+          <li class="nav-item">
+            <a href="/Feedback.html" class="nav-link">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="comments"
+                class="svg-inline--fa fa-comments fa-w-18"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512">
+                <g class="fa-group">
+                  <path
+                    fill="currentColor"
+                    d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3
+                    14.1
+                    65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5
+                    8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25
+                    111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7
+                    38-92
+                    0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0
+                    105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6
+                    281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25
+                    88.7
+                    25 3.2 0 6.1-1.9 7.3-4.8
+                    1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z"
+                    class="fa-secondary"></path>
+                </g>
+              </svg>
+              <span class="link-text">Feedback</span>
+            </a>
+          </li>
+  
+          <!--Themes Button-->
+          <li class="nav-item" id="themeButton">
+            <a href="#1" class="nav-link">
+              <svg
+                class="theme-icon"
+                id="darkIcon"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fad"
+                data-icon="moon-stars"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="svg-inline--fa fa-moon-stars fa-w-16 fa-7x">
+                <g class="fa-group">
+                  <path
+                    fill="currentColor"
+                    d="M320 32L304 0l-16 32-32 16 32 16 16 32 16-32 32-16zm138.7
+                    149.3L432 128l-26.7 53.3L352 208l53.3 26.7L432
+                    288l26.7-53.3L512
+                    208z"
+                    class="fa-secondary"></path>
+                  <path
+                    fill="currentColor"
+                    d="M332.2 426.4c8.1-1.6 13.9 8 8.6 14.5a191.18 191.18 0 0
+                    1-149
+                    71.1C85.8 512 0 426 0 320c0-120 108.7-210.6 227-188.8 8.2
+                    1.6
+                    10.1 12.6 2.8 16.7a150.3 150.3 0 0 0-76.1 130.8c0 94 85.4
+                    165.4
+                    178.5 147.7z"
+                    class="fa-primary"></path>
+                </g>
+              </svg>
+              <svg
+                class="theme-icon"
+                id="lightIcon"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fad"
+                data-icon="sunglasses"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="svg-inline--fa fa-sun fa-w-16 fa-7x">
+                <g class="fa-group">
+                  <path
+                    fill="currentColor"
+                    d="M502.42 240.5l-94.7-47.3
+                    33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4
+                    33.5-47.41-94.8a17.31 17.31 0 0 0-31 0l-47.3 94.7L92.7
+                    70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4a17.31
+                    17.31 0 0 0 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5
+                    21.9
+                    21.9l100.41-33.5 47.3 94.7a17.31 17.31 0 0 0 31 0l47.31-94.7
+                    100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4
+                    94.7-47.3a17.33 17.33 0 0 0 .2-31.1zm-155.9 106c-49.91
+                    49.9-131.11 49.9-181 0a128.13 128.13 0 0 1 0-181c49.9-49.9
+                    131.1-49.9 181 0a128.13 128.13 0 0 1 0 181z"
+                    class="fa-secondary"></path>
+                  <path
+                    fill="currentColor"
+                    d="M352 256a96 96 0 1 1-96-96 96.15 96.15 0 0 1 96 96z"
+                    class="fa-primary"></path>
+                </g>
+              </svg>
+              <svg
+                class="theme-icon"
+                id="solarIcon"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fad"
+                data-icon="sun"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+                class="svg-inline--fa fa-sunglasses fa-w-18 fa-7x">
+                <g class="fa-group">
+                  <path
+                    fill="currentColor"
+                    d="M574.09 280.38L528.75 98.66a87.94 87.94 0 0
+                    0-113.19-62.14l-15.25 5.08a16 16 0 0 0-10.12 20.25L395.25
+                    77a16
+                    16 0 0 0 20.22 10.13l13.19-4.39c10.87-3.63 23-3.57 33.15
+                    1.73a39.59 39.59 0 0 1 20.38 25.81l38.47 153.83a276.7 276.7
+                    0
+                    0
+                    0-81.22-12.47c-34.75 0-74 7-114.85
+                    26.75h-73.18c-40.85-19.75-80.07-26.75-114.85-26.75a276.75
+                    276.75
+                    0 0 0-81.22 12.45l38.47-153.8a39.61 39.61 0 0 1
+                    20.38-25.82c10.15-5.29 22.28-5.34 33.15-1.73l13.16 4.39A16
+                    16
+                    0
+                    0 0 180.75 77l5.06-15.19a16 16 0 0
+                    0-10.12-20.21l-15.25-5.08A87.95 87.95 0 0 0 47.25 98.65L1.91
+                    280.38A75.35 75.35 0 0 0 0 295.86v70.25C0 429 51.59 480
+                    115.19
+                    480h37.12c60.28 0 110.38-45.94
+                    114.88-105.37l2.93-38.63h35.76l2.93 38.63c4.5 59.43 54.6
+                    105.37
+                    114.88 105.37h37.12C524.41 480 576 429 576
+                    366.13v-70.25a62.67
+                    62.67 0 0 0-1.91-15.5zM203.38 369.8c-2 25.9-24.41 46.2-51.07
+                    46.2h-37.12C87 416 64 393.63 64 366.11v-37.55a217.35 217.35
+                    0
+                    0
+                    1 72.59-12.9 196.51 196.51 0 0 1 69.91 12.9zM512 366.13c0
+                    27.5-23 49.87-51.19 49.87h-37.12c-26.69
+                    0-49.1-20.3-51.07-46.2l-3.12-41.24a196.55 196.55 0 0 1
+                    69.94-12.9A217.41 217.41 0 0 1 512 328.58z"
+                    class="fa-secondary"></path>
+                  <path
+                    fill="currentColor"
+                    d="M64.19 367.9c0-.61-.19-1.18-.19-1.8 0 27.53 23 49.9 51.19
+                    49.9h37.12c26.66 0 49.1-20.3
+                    51.07-46.2l3.12-41.24c-14-5.29-28.31-8.38-42.78-10.42zm404-50l-95.83
+                    47.91.3 4c2 25.9 24.38 46.2 51.07 46.2h37.12C489 416 512
+                    393.63
+                    512 366.13v-37.55a227.76 227.76 0 0 0-43.85-10.66z"
+                    class="fa-primary"></path>
+                </g>
+              </svg>
+              <span class="link-text">Themes</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!--Navigation  Bar End-->
+  
+    <!--User Account Nav-->
+    <section>
+      <div class="AccountNavigation">
+        <div class="userBox">
+          <div class="imgBox">
+            <img src="/Images/Feedback/Faces/Discord Profile Gif.gif">
+          </div>
+          <p class="AccountUsername">Aryan Kora</p>
+        </div>
+        <div class="menuToggle">
+        </div>
+        <ul class="UserMenu">
+          <li class="child"><a href="#"><ion-icon name="person-outline"></ion-icon> My Profile</a></li>
+          <li class="child"><a href="#"><ion-icon name="chatbubble-outline"></ion-icon> Messages</a></li>
+          <li class="child"><a href="#"><ion-icon name="notifications-outline"></ion-icon> Notifications</a></li>
+          <li class="child"><a href="#"><ion-icon name="settings-outline"></ion-icon> Settings</a></li>
+          <li class="child"><a href="#"><ion-icon name="help-outline"></ion-icon> Help & Support</a></li>
+          <li class="child"><a href="/Login.html"><ion-icon name="log-out-outline"></ion-icon> logout</a></li>
+        </ul>
+      </div>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let AccountNavigation = document.querySelector('.AccountNavigation');
+        menuToggle.onclick = function(){
+          AccountNavigation.classList.toggle('active')
+        }
+      </script>
+    </section>
+    <!--User Account Nav End-->
+  
+    <main>
+      <!--Title-->
+      <section>
+        <div class="container">
+          <h1 id="title-font">Little Dessert Shop Drinks Page</h1>
+          <svg
+            class="line-div"
+            version="1.0"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1280.000000 640.000000"
+            preserveAspectRatio="xMidYMid meet">
+            <g
+              transform="translate(0.000000,640.000000) scale(0.100000,-0.100000)"
+              stroke="none">
+              <path
+                d="M758 3889 c-271 -33 -507 -150 -631 -310 -175 -228 -166 -576
+                20
+                -766 91 -93 232 -142 374 -128 196 18 324 101 398 255 35 73 36 78
+                36 195 0
+                114 -2 123 -32 187 -61 130 -166 209 -277 210 -136 1 -187 -117 -65
+                -154 35
+                -10 52 -9 111 6 l70 18 24 -23 c13 -13 37 -48 52 -78 25 -51 27 -66
+                27 -171 0
+                -105 -2 -119 -27 -165 -69 -133 -215 -204 -393 -192 -59 3 -99 12
+                -138 30
+                -135 61 -217 215 -217 402 0 155 46 263 161 377 61 61 95 86 170 122
+                144 69
+                268 97 474 103 276 9 497 -35 827 -163 48 -19 91 -34 96 -34 4 0 23
+                13 42 28
+                l34 29 -130 50 c-320 126 -516 171 -764 178 -91 2 -199 0 -242 -6z"></path>
+              <path
+                d="M11663 3890 c-168 -18 -383 -77 -627 -173 l-130 -50 34 -29
+                c19 -15
+                38 -28 42 -28 4 0 31 10 60 21 197 79 412 140 580 165 166 24 415 15
+                558 -21
+                160 -39 275 -100 369 -193 115 -114 161 -222 161 -377 0 -93 -24
+                -191 -64
+                -259 -65 -111 -155 -165 -291 -173 -178 -12 -324 59 -393 192 -25 46
+                -27 60
+                -27 165 0 105 2 120 27 171 15 30 39 65 52 78 l24 23 70 -18 c59 -15
+                76 -16
+                111 -6 122 37 71 155 -65 154 -111 -1 -216 -80 -277 -210 -30 -64
+                -32 -73 -32
+                -187 0 -117 1 -122 36 -195 57 -119 157 -203 283 -236 248 -66 473
+                24 574 229
+                101 205 75 459 -67 647 -176 234 -573 356 -1008 310z"></path>
+              <path
+                d="M4548 3861 c-75 -24 -118 -52 -172 -112 -61 -68 -81 -130 -80
+                -249 1
+                -105 31 -213 80 -291 14 -23 24 -42 22 -44 -2 -2 -71 35 -153 82
+                -389 223
+                -742 394 -975 473 -374 128 -778 142 -1100 38 -245 -78 -444 -243
+                -547 -453
+                -46 -93 -58 -149 -57 -265 1 -89 5 -116 27 -174 86 -220 281 -356
+                512 -356 96
+                0 166 18 260 64 132 66 230 164 235 236 5 62 -1 83 -34 116 -26 26
+                -42 34 -69
+                34 -74 0 -111 -68 -97 -179 7 -57 5 -60 -70 -103 -77 -44 -152 -61
+                -254 -56
+                -77 3 -101 9 -159 37 -187 90 -285 302 -232 504 59 227 295 440 543
+                492 93 19
+                310 20 417 1 327 -58 655 -191 1450 -588 504 -253 676 -323 938 -387
+                268 -66
+                545 -83 732 -47 308 60 514 239 581 505 25 100 16 249 -19 323 -88
+                182 -337
+                263 -579 188 -115 -35 -188 -106 -188 -182 0 -89 124 -106 196 -26
+                12 12 32
+                43 44 68 13 25 28 48 34 52 20 14 171 8 224 -7 73 -22 132 -70 165
+                -135 27
+                -52 28 -61 25 -165 -3 -103 -5 -115 -41 -189 -72 -151 -221 -264
+                -422 -318
+                -118 -31 -376 -32 -527 0 -422 88 -770 337 -856 612 -26 84 -23 233
+                5 286 29
+                54 93 109 151 128 47 17 207 22 228 8 6 -4 24 -35 39 -70 31 -69 55
+                -92 97
+                -92 58 0 82 60 50 125 -54 112 -260 168 -424 116z"></path>
+              <path
+                d="M8015 3874 c-152 -38 -250 -168 -179 -238 19 -20 63 -21 90
+                -2 11 8
+                33 43 49 78 15 35 33 66 39 70 21 14 181 9 228 -8 58 -19 122 -74
+                151 -128 28
+                -53 31 -202 5 -286 -86 -275 -434 -524 -856 -612 -151 -32 -409 -31
+                -527 0
+                -201 54 -350 167 -422 318 -36 74 -38 86 -41 189 -3 104 -2 113 25
+                165 33 65
+                92 113 165 135 53 15 205 21 224 7 5 -4 20 -27 33 -52 42 -82 91
+                -120 156
+                -120 47 0 85 36 85 82 0 72 -76 144 -188 178 -242 75 -491 -6 -579
+                -188 -35
+                -74 -44 -223 -19 -323 53 -212 201 -375 415 -458 226 -87 541 -87
+                898 0 262
+                64 434 134 938 387 795 397 1123 530 1450 588 120 21 332 18 432 -6
+                249 -59
+                470 -264 528 -487 53 -202 -45 -414 -232 -504 -131 -63 -314 -49
+                -437 33 l-49
+                33 2 88 c2 85 1 88 -28 117 -77 78 -197 -10 -171 -125 13 -56 55
+                -111 123
+                -162 121 -90 241 -133 372 -133 389 0 648 388 501 751 -157 388 -615
+                608
+                -1169 560 -270 -22 -476 -79 -773 -211 -171 -76 -458 -226 -699 -363
+                -82 -47
+                -151 -84 -153 -82 -2 2 8 21 22 44 49 78 79 186 80 291 1 132 -19
+                186 -98 266
+                -81 80 -145 106 -276 110 -52 1 -104 1 -115 -2z"></path>
+              <path
+                d="M2058 3560 c-20 -11 -39 -24 -42 -29 -9 -13 498 -237 804
+                -354 80
+                -30 249 -91 375 -135 127 -44 237 -83 245 -86 8 -4 23 -19 32 -36 33
+                -59 148
+                -60 156 -2 7 50 -54 87 -260 157 -310 106 -798 295 -1026 396 -135
+                60 -245
+                109 -246 109 -1 -1 -18 -10 -38 -20z"></path>
+              <path
+                d="M10454 3470 c-224 -100 -707 -287 -1022 -395 -206 -70 -267
+                -107
+                -260 -157 8 -58 123 -57 156 2 9 17 24 32 32 36 8 3 119 42 245 86
+                127 44 295
+                105 375 135 307 118 813 341 804 354 -5 9 -80 50 -86 48 -2 0 -112
+                -49 -244
+                -109z"></path>
+              <path
+                d="M3080 3240 c0 -3 37 -19 83 -35 81 -30 85 -30 340 -35 141 -3
+                257 -2
+                257 1 0 4 -28 19 -62 35 l-63 29 -278 5 c-152 3 -277 3 -277 0z"></path>
+              <path
+                d="M9435 3240 l-270 -5 -62 -29 c-35 -16 -63 -31 -63 -35 0 -3
+                116 -4
+                257 -1 255 5 259 5 341 35 45 16 82 33 82 37 0 5 -3 7 -7 6 -5 -1
+                -129 -5
+                -278 -8z"></path>
+              <path
+                d="M140 3205 l0 -35 341 0 c307 0 341 2 335 16 -3 9 -6 24 -6 35
+                0 18
+                -11 19 -335 19 l-335 0 0 -35z"></path>
+              <path
+                d="M1012 3208 l3 -33 251 -3 251 -2 10 35 11 35 -265 0 -264 0 3
+                -32z"></path>
+              <path
+                d="M1766 3231 c-3 -4 -10 -20 -15 -34 l-10 -27 469 -2 c259 -2
+                470 -1
+                470 2 0 3 -37 20 -83 38 l-83 32 -371 0 c-205 0 -374 -4 -377 -9z"></path>
+              <path
+                d="M4546 3205 l26 -35 799 0 799 0 0 35 0 35 -826 0 -825 0 27
+                -35z"></path>
+              <path
+                d="M6630 3205 l0 -35 799 0 799 0 26 35 27 35 -825 0 -826 0 0
+                -35z"></path>
+              <path
+                d="M10198 3207 c-43 -18 -78 -34 -78 -37 0 -3 211 -4 470 -2
+                l470 2 -13
+                33 -13 32 -380 2 -379 1 -77 -31z"></path>
+              <path
+                d="M11273 3205 l10 -35 248 0 c265 0 259 -1 259 51 0 18 -10 19
+                -264 19
+                l-264 0 11 -35z"></path>
+              <path
+                d="M11990 3221 c0 -11 -3 -26 -6 -35 -6 -14 28 -16 335 -16 l341
+                0 0 35
+                0 35 -335 0 c-324 0 -335 -1 -335 -19z"></path>
+            </g>
+          </svg>
+        </div>
+      </section>
+      <!--Title End-->
+  
+      <!--VIDEO-->
+      <video
+        src="Videos/Drinks Video.mp4"
+        autoplay
+        muted
+        loop
+        class="top-vid"></video>
+      <!--VIDEO END-->
+  
+      <!-- Page information-->
+      <section>
+        <div class="home-page-text">
+          <div class="text-box">
+            <p>
+              Welcome to our drinks page! At our dessert shop, we offer a variety of refreshing beverages that are the perfect complement to our delicious desserts. We believe that a great drink can enhance the overall dessert experience, which is why we take great care in crafting our drink menu.
+              Our drink menu includes a variety of options to suit every taste. We offer classic coffee and tea drinks, as well as specialty lattes, cappuccinos, and mochas. Our iced drinks include cold brew coffee, iced tea, and refreshing fruit smoothies. For those who prefer something a little stronger, we offer a selection of alcoholic beverages, including beer, wine, and cocktails.
+            </p>
+          </div>
+  
+          <!--Menu Cards-->
+          <section>
+            <div class="Menu-card-body">
+              <div class="Menu-card-con">
+                <div class="Menu-cards">
+                  <div class="drink-card-image">
+                    <img
+                      src="Images/Alco.png"
+                      alt="Desert Shop Menu"
+                      />
+                  </div>
+                  <div class="drink-card-detail">
+                    <h1>Little Dessert Shop Drinks Menu</h1>
+                    <p>
+                      Buy a large range of drinks directly from the Little Dessert Shop! These range from:<br> •Soft drinks: Coke, Pepsi & Sprite <br> •Fruit Juices: Orange, Apple & Tropical Juice <br> •Coctails, a variety of Wines <br> •And a variety of Champanes!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--Info Cards End-->
+  
+          <div class="text-box">
+            <p>
+              We also believe in using high-quality ingredients in our drinks. Our coffee and tea are sourced from the best farms and estates around the world, ensuring that every cup is rich and flavorful. Our smoothies are made with fresh fruits and vegetables, and we never use any artificial flavors or preservatives in our drinks.
+              At our dessert shop, we understand that everyone has different dietary needs and preferences, which is why we offer a variety of options to accommodate special diets such as gluten-free, dairy-free, and vegan. We are committed to ensuring that everyone can enjoy our drinks, no matter their dietary restrictions.
+              Please take a moment to browse our drink menu and discover the perfect beverage to complement your dessert. We thank you for your support and hope to see you soon!
+            </p>
+          </div>
+  
+          <!--RAINBOW TEXT-->
+          <section>
+            <div class="rainbow-con">
+              <ul class="c-rainbow">
+                <li class="c-rainbow__layer c-rainbow__layer--white">
+                  ORDER ITEMS
+                </li>
+                <li class="c-rainbow__layer c-rainbow__layer--orange">
+                  ORDER ITEMS
+                </li>
+                <li class="c-rainbow__layer c-rainbow__layer--red">
+                  ORDER ITEMS
+                </li>
+                <li class="c-rainbow__layer c-rainbow__layer--violet">
+                  ORDER ITEMS
+                </li>
+                <li class="c-rainbow__layer c-rainbow__layer--blue">
+                  ORDER ITEMS
+                </li>
+                <li class="c-rainbow__layer c-rainbow__layer--green">
+                  ORDER ITEMS
+                </li>
+                <li class="c-rainbow__layer c-rainbow__layer--yellow">
+                  ORDER ITEMS
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!--RAINBOW TEXT END-->
+        </div>
+      </section>
+  
+      <!--Product Cards-->
+      <section>
+        <!--SECTION 1-->
+        <section class="product-card-con" style="padding-bottom: 50px">
+          <!--Cookies-->
+          <div class="product-card">
+            <div class="card-circle"></div>
+            <div class="product-card-content">
+              <h2>Coke</h2>
+              <p>
+                Enjoy the classic taste of Coca-Cola! Made with a secret blend of natural flavors and served ice-cold.
+              </p>
+              <a href="#">Buy for £0.50</a>
+            </div>
+            <img
+              class="drinkSize-1"
+              src="/Images/Shop Menu/Icons/Drinks/Coke.png"
+              />
+          </div>
+          <!--Cakes-->
+          <div class="product-card">
+            <div class="card-circle"></div>
+            <div class="product-card-content">
+              <h2>Pepsi</h2>
+              <p>
+                Satisfy your thirst with the delicious taste of Pepsi! Made with high-quality ingredients and served ice-cold.
+              </p>
+              <a href="#">Buy for £0.65</a>
+            </div>
+            <img
+              class="drinkSize-2"
+              src="/Images/Shop Menu/Icons/Drinks/Pepsi.png"
+              />
+          </div>
+          <!--Sprite-->
+          <div class="product-card">
+            <div class="card-circle"></div>
+            <div class="product-card-content">
+              <h2>Sprite</h2>
+              <p>
+                Quench your thirst with the refreshing taste of Sprite! Made with natural lemon and lime flavors and served ice-cold.
+              </p>
+              <a href="#">Buy for £0.75</a>
+            </div>
+            <img
+              class="drinkSize-3"
+              src="/Images/Shop Menu/Icons/Drinks/Sprite.png"
+              />
+          </div>
+        </section>
+        <!--SECTION 2-->
+        <section class="product-card-con" style="padding-bottom: 50px">
+          <!--Fruit Juice-->
+          <div class="product-card">
+            <div class="card-circle-2"></div>
+            <div class="product-card-content">
+              <h2>Fruit Juice</h2>
+              <p>
+                Enjoy the natural sweetness of our fruit juices! From classic orange juice and apple juice to more exotic flavors like mango and pineapple. 
+              </p>
+              <a href="#">Buy for £1.25</a>
+            </div>
+            <img
+              class="drinkSize-4"
+              src="/Images/Shop Menu/Icons/Drinks/Fruit Juice.png"
+              />
+          </div>
+          <!--Fruit Shoot-->
+          <div class="product-card">
+            <div class="card-circle-2"></div>
+            <div class="product-card-content">
+              <h2>Fruit Shoot</h2>
+              <p>
+                Quench your child's thirst with the fun and fruity taste of Fruit Shoot! Chose from a range of flavors, including apple, orange, and mixed berry.
+              </p>
+              <a href="#">Buy for £0.69</a>
+            </div>
+            <img
+              class="drinkSize-5"
+              src="/Images/Shop Menu/Icons/Drinks/Fruit Shoot 2.png"
+              />
+          </div>
+          <!--Water Bottle-->
+          <div class="product-card">
+            <div class="card-circle-2"></div>
+            <div class="product-card-content">
+              <h2>Water Bottle</h2>
+              <p>
+                Quench your kid's thirst with the fun and fruity taste of Fruit Shoot! Chose from a range of flavors, including apple, orange, and mixed berry.
+              </p>
+              <a href="#">Buy for £0.25</a>
+            </div>
+            <img
+              class="drinkSize-6"
+              src="/Images/Shop Menu/Icons/Drinks/Water Bottle.png"
+              />
+          </div>
+        </section>
+        <!--SECTION 3-->
+        <section class="product-card-con" style="padding-bottom: 50px">
+          <!--Cocktail-->
+          <div class="product-card">
+            <div class="card-circle-3"></div>
+            <div class="product-card-content">
+              <h2>Cocktails</h2>
+              <p>
+                Unwind with our tantalizing cocktails from classic mojitos and margaritas to innovative creations like passion fruit martinis and lavender gin fizzes!
+              </p>
+              <a href="#">Starting from £4.99</a>
+            </div>
+            <img
+              class="drinkSize-7"
+              src="/Images/Shop Menu/Icons/Drinks/Cocktail.png"
+              />
+          </div>
+          <!--Wine-->
+          <div class="product-card">
+            <div class="card-circle-3"></div>
+            <div class="product-card-content">
+              <h2>Wine</h2>
+              <p>
+                Unwind and indulge in the rich flavors of our wine collection! Chose from a a range from classic red and white wines to sparkling and dessert wines.
+              </p>
+              <a href="#">Starting from £9.99</a>
+            </div>
+            <img
+              class="drinkSize-8"
+              src="/Images/Shop Menu/Icons/Drinks/Wine.png"
+              />
+          </div>
+          <!--Champagne-->
+          <div class="product-card">
+            <div class="card-circle-3"></div>
+            <div class="product-card-content">
+              <h2>Champane</h2>
+              <p>
+                Celebrate in style with the effervescence of our champagne! Chose from a range of a luxurious selection of champagne, from classic brut to sweet rosé.
+              </p>
+              <a href="#">Starting from £12.99</a>
+            </div>
+            <img
+              class="drinkSize-9"
+              src="/Images/Shop Menu/Icons/Drinks/Champane.png"
+              />
+          </div>
+        </section>
+      </section>
+      <!--Product Cards End-->
+  
+      <!-- Page information End-->
+    </main>
+</body>

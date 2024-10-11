@@ -1,12 +1,12 @@
 <head>
-  <title>Home</title>
+  <title>Feedback</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--JS-->
   <script defer src="/js/theme.js"></script>
   <script defer src="/js/ScrollReveal.js"></script>
   <script src="/js/scrollreveal.min.js"></script>
   <!--CSS-->
-  <link rel="stylesheet" href="CSS/Main stylesheet.css" />
+  <link rel="stylesheet" href="/CSS/Main stylesheet.css" />
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,7 +40,7 @@
     <script type="text/javascript">
       setInterval(function () {
         if (document.readyState == "complete") {
-          document.getElementById("loader-wrapper").style.display = "none";
+          document.getElementById("loader-wrapper").style.visibility = "hidden";
         }
       }, 100);
     </script>
@@ -49,64 +49,58 @@
 
   <!--Background-->
   <section id="back-svg">
-    <svg
-      class="background"
-      id="visual"
-      viewBox="0 0 900 600"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      version="1.1"
-      preserveAspectRatio="none">
-      <path
-        d="M0 133L16.7 153C33.3 173 66.7 213 100 238C133.3 263 166.7 273 200
-        262C233.3 251 266.7 219 300 194C333.3 169 366.7 151 400 137C433.3 123
-        466.7 113 500 116C533.3 119 566.7 135 600 144C633.3 153 666.7 155 700
-        161C733.3 167 766.7 177 800 167C833.3 157 866.7 127 883.3 112L900 97L900
-        0L883.3 0C866.7 0 833.3 0 800 0C766.7 0 733.3 0 700 0C666.7 0 633.3 0
-        600 0C566.7 0 533.3 0 500 0C466.7 0 433.3 0 400 0C366.7 0 333.3 0 300
-        0C266.7 0 233.3 0 200 0C166.7 0 133.3 0 100 0C66.7 0 33.3 0 16.7 0L0 0Z"
-        fill="#6198ff"></path>
-      <path
-        d="M0 295L16.7 300C33.3 305 66.7 315 100 322C133.3 329 166.7 333 200
-        337C233.3 341 266.7 345 300 331C333.3 317 366.7 285 400 258C433.3 231
-        466.7 209 500 213C533.3 217 566.7 247 600 263C633.3 279 666.7 281 700
-        286C733.3 291 766.7 299 800 290C833.3 281 866.7 255 883.3 242L900
-        229L900 95L883.3 110C866.7 125 833.3 155 800 165C766.7 175 733.3 165 700
-        159C666.7 153 633.3 151 600 142C566.7 133 533.3 117 500 114C466.7 111
-        433.3 121 400 135C366.7 149 333.3 167 300 192C266.7 217 233.3 249 200
-        260C166.7 271 133.3 261 100 236C66.7 211 33.3 171 16.7 151L0 131Z"
-        fill="#005fee"></path>
-      <path
-        d="M0 487L16.7 476C33.3 465 66.7 443 100 439C133.3 435 166.7 449 200
-        462C233.3 475 266.7 487 300 490C333.3 493 366.7 487 400 480C433.3 473
-        466.7 465 500 463C533.3 461 566.7 465 600 461C633.3 457 666.7 445 700
-        451C733.3 457 766.7 481 800 488C833.3 495 866.7 485 883.3 480L900
-        475L900 227L883.3 240C866.7 253 833.3 279 800 288C766.7 297 733.3 289
-        700 284C666.7 279 633.3 277 600 261C566.7 245 533.3 215 500 211C466.7
-        207 433.3 229 400 256C366.7 283 333.3 315 300 329C266.7 343 233.3 339
-        200 335C166.7 331 133.3 327 100 320C66.7 313 33.3 303 16.7 298L0 293Z"
-        fill="#004cbb"></path>
-      <path
-        d="M0 547L16.7 544C33.3 541 66.7 535 100 537C133.3 539 166.7 549 200
-        552C233.3 555 266.7 551 300 548C333.3 545 366.7 543 400 538C433.3 533
-        466.7 525 500 522C533.3 519 566.7 521 600 528C633.3 535 666.7 547 700
-        551C733.3 555 766.7 551 800 546C833.3 541 866.7 535 883.3 532L900
-        529L900 473L883.3 478C866.7 483 833.3 493 800 486C766.7 479 733.3 455
-        700 449C666.7 443 633.3 455 600 459C566.7 463 533.3 459 500 461C466.7
-        463 433.3 471 400 478C366.7 485 333.3 491 300 488C266.7 485 233.3 473
-        200 460C166.7 447 133.3 433 100 437C66.7 441 33.3 463 16.7 474L0 485Z"
-        fill="#005fee"></path>
-      <path
-        d="M0 601L16.7 601C33.3 601 66.7 601 100 601C133.3 601 166.7 601 200
-        601C233.3 601 266.7 601 300 601C333.3 601 366.7 601 400 601C433.3 601
-        466.7 601 500 601C533.3 601 566.7 601 600 601C633.3 601 666.7 601 700
-        601C733.3 601 766.7 601 800 601C833.3 601 866.7 601 883.3 601L900
-        601L900 527L883.3 530C866.7 533 833.3 539 800 544C766.7 549 733.3 553
-        700 549C666.7 545 633.3 533 600 526C566.7 519 533.3 517 500 520C466.7
-        523 433.3 531 400 536C366.7 541 333.3 543 300 546C266.7 549 233.3 553
-        200 550C166.7 547 133.3 537 100 535C66.7 533 33.3 539 16.7 542L0 545Z"
-        fill="#6198ff"></path>
-    </svg>
+    <svg id="visual" viewBox="0 0 900 600" class="background"
+      preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0
+        157L13.7 155C27.3 153 54.7 149 82 143C109.3 137 136.7 129 163.8 138C191
+        147 218 173 245.2 173C272.3 173 299.7 147 327 152C354.3 157 381.7 193
+        409 189C436.3 185 463.7 141 491 123C518.3 105 545.7 113 573 118C600.3
+        123 627.7 125 654.8 150C682 175 709 223 736.2 224C763.3 225 790.7 179
+        818 167C845.3 155 872.7 177 886.3 188L900 199L900 0L886.3 0C872.7 0
+        845.3 0 818 0C790.7 0 763.3 0 736.2 0C709 0 682 0 654.8 0C627.7 0 600.3
+        0 573 0C545.7 0 518.3 0 491 0C463.7 0 436.3 0 409 0C381.7 0 354.3 0 327
+        0C299.7 0 272.3 0 245.2 0C218 0 191 0 163.8 0C136.7 0 109.3 0 82 0C54.7
+        0 27.3 0 13.7 0L0 0Z" fill="#6198ff"></path><path d="M0 289L13.7
+        291C27.3 293 54.7 297 82 300C109.3 303 136.7 305 163.8 304C191 303 218
+        299 245.2 297C272.3 295 299.7 295 327 301C354.3 307 381.7 319 409
+        324C436.3 329 463.7 327 491 329C518.3 331 545.7 337 573 345C600.3 353
+        627.7 363 654.8 368C682 373 709 373 736.2 364C763.3 355 790.7 337 818
+        327C845.3 317 872.7 315 886.3 314L900 313L900 197L886.3 186C872.7 175
+        845.3 153 818 165C790.7 177 763.3 223 736.2 222C709 221 682 173 654.8
+        148C627.7 123 600.3 121 573 116C545.7 111 518.3 103 491 121C463.7 139
+        436.3 183 409 187C381.7 191 354.3 155 327 150C299.7 145 272.3 171 245.2
+        171C218 171 191 145 163.8 136C136.7 127 109.3 135 82 141C54.7 147 27.3
+        151 13.7 153L0 155Z" fill="#3c80ff"></path><path d="M0 403L13.7 404C27.3
+        405 54.7 407 82 415C109.3 423 136.7 437 163.8 442C191 447 218 443 245.2
+        437C272.3 431 299.7 423 327 424C354.3 425 381.7 435 409 439C436.3 443
+        463.7 441 491 446C518.3 451 545.7 463 573 466C600.3 469 627.7 463 654.8
+        461C682 459 709 461 736.2 463C763.3 465 790.7 467 818 468C845.3 469
+        872.7 469 886.3 469L900 469L900 311L886.3 312C872.7 313 845.3 315 818
+        325C790.7 335 763.3 353 736.2 362C709 371 682 371 654.8 366C627.7 361
+        600.3 351 573 343C545.7 335 518.3 329 491 327C463.7 325 436.3 327 409
+        322C381.7 317 354.3 305 327 299C299.7 293 272.3 293 245.2 295C218 297
+        191 301 163.8 302C136.7 303 109.3 301 82 298C54.7 295 27.3 291 13.7
+        289L0 287Z" fill="#0066ff"></path><path d="M0 517L13.7 514C27.3 511 54.7
+        505 82 511C109.3 517 136.7 535 163.8 540C191 545 218 537 245.2 533C272.3
+        529 299.7 529 327 529C354.3 529 381.7 529 409 525C436.3 521 463.7 513
+        491 511C518.3 509 545.7 513 573 518C600.3 523 627.7 529 654.8 531C682
+        533 709 531 736.2 528C763.3 525 790.7 521 818 523C845.3 525 872.7 533
+        886.3 537L900 541L900 467L886.3 467C872.7 467 845.3 467 818 466C790.7
+        465 763.3 463 736.2 461C709 459 682 457 654.8 459C627.7 461 600.3 467
+        573 464C545.7 461 518.3 449 491 444C463.7 439 436.3 441 409 437C381.7
+        433 354.3 423 327 422C299.7 421 272.3 429 245.2 435C218 441 191 445
+        163.8 440C136.7 435 109.3 421 82 413C54.7 405 27.3 403 13.7 402L0 401Z"
+        fill="#0059dd"></path><path d="M0 601L13.7 601C27.3 601 54.7 601 82
+        601C109.3 601 136.7 601 163.8 601C191 601 218 601 245.2 601C272.3 601
+        299.7 601 327 601C354.3 601 381.7 601 409 601C436.3 601 463.7 601 491
+        601C518.3 601 545.7 601 573 601C600.3 601 627.7 601 654.8 601C682 601
+        709 601 736.2 601C763.3 601 790.7 601 818 601C845.3 601 872.7 601 886.3
+        601L900 601L900 539L886.3 535C872.7 531 845.3 523 818 521C790.7 519
+        763.3 523 736.2 526C709 529 682 531 654.8 529C627.7 527 600.3 521 573
+        516C545.7 511 518.3 507 491 509C463.7 511 436.3 519 409 523C381.7 527
+        354.3 527 327 527C299.7 527 272.3 527 245.2 531C218 535 191 543 163.8
+        538C136.7 533 109.3 515 82 509C54.7 503 27.3 509 13.7 512L0 515Z"
+        fill="#004cbb"></path></svg>
   </section>
   <!--Background End-->
 
@@ -567,7 +561,7 @@
     <!--Title-->
     <section>
       <div class="container">
-        <h1 id="title-font">Little Dessert Shop Home Page</h1>
+        <h1 id="title-font">Little Dessert Shop Feedback Page</h1>
         <svg
           class="line-div"
           version="1.0"
@@ -727,146 +721,208 @@
       </div>
     </section>
 
-    <!--Image Slider-->
-    <section>
-      <div class="slidecon">
-        <div class="slider">
-          <div class="slides">
-            <!--Radio Buttons Start-->
-            <input type="radio" name="radio-btn" id="radio1" />
-            <input type="radio" name="radio-btn" id="radio2" />
-            <input type="radio" name="radio-btn" id="radio3" />
-            <input type="radio" name="radio-btn" id="radio4" />
-            <!--Radio Buttons End-->
-            <!--Slide Images Start-->
-            <div class="slide first">
-              <img
-                src="/Images/Slide Show Images/Image-1.png"
-                alt="Little Desert Shop logo"
-                />
-            </div>
-            <div class="slide">
-              <img
-                src="/Images/Slide Show Images/Image-2.png"
-                alt="Ice Cream Desert Plate"
-                />
-            </div>
-            <div class="slide">
-              <img
-                src="/Images/Slide Show Images/Image-3.png"
-                alt="Chocolate chaos"
-                />
-            </div>
-            <div class="slide">
-              <img
-                src="/Images/Slide Show Images/Image-4.png"
-                alt="Little Desert Shop Logo 2"
-                />
-            </div>
-            <!--Slide Images End-->
-            <!--Automatic Navigation Start-->
-            <div class="navigation-auto">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
-              <div class="auto-btn4"></div>
-            </div>
-            <!--Automatic Navigation End-->
-          </div>
-          <!--Manual Navigation Start-->
-          <div class="navigation-manual" class="buttons">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-          </div>
-          <!--Manual Navigation End-->
-        </div>
-        <!--Image Slider End-->
-
-        <!--JavaScript for Timer-->
-        <script type="text/javascript">
-          var counter = 1;
-          setInterval(function () {
-            document.getElementById("radio" + counter).checked = true;
-            counter++;
-            if (counter > 4) {
-              counter = 1;
-            }
-          }, 7000);
-        </script>
-      </div>
-      <!--JavaScript End-->
-    </section>
-    <!--Image Slider End-->
+    <!--VIDEO-->
+    <video src="Videos/Feedback Page Video.mp4" autoplay muted loop class="top-vid"></video>
+    <!--VIDEO END-->
 
     <!-- Page information-->
     <section>
       <div class="home-page-text">
-        <p><font size="+3">Welcome to the Little Dessert Shop website!</font></p>
-        <div class="text-box" style="margin-bottom: 75px;">
-          <p style="transition: 0s;">
-            Discover the nation’s favourite dessert brand Little Dessert Shop® & embark on a journey of pure indulgence.<br>
-            Little Dessert Shop® is an award-winning brand that has continued to innovate to become the leading trendsetter in the UK since 2015. Serving handcrafted artisanal waffles, crepes, coffee, cheesecakes, cookie dough & gelato combined with our unrivalled dining experience to offer an experience like no other…<br>
-            Prepare to lose yourself, delve into a new taste sensation like never before & explore a new world of creations. Our irresistible dishes are lovingly hand crafted & made just for you.<br>
-            Whether it’s a catch up with a friend, a birthday or a celebration, the Little Dessert Shop® is the perfect place to indulge in life’s sweet moments.
+        <div class="text-box">
+          <p>
+            Welcome to our dessert shop feedback website page! We are a team of passionate dessert enthusiasts who believe that every occasion deserves a touch of sweetness. Our shop offers a wide range of delicious desserts, including cakes, pastries, cookies, and more, each made with love and care. We take great pride in using only the freshest and highest quality ingredients in our desserts, ensuring that every bite is a truly delightful experience.
+            At our dessert shop, we strive to provide exceptional service to all of our customers. From the moment you walk through our doors, our friendly and knowledgeable staff is here to make your experience as enjoyable as possible. We believe that a great dessert is not just about the taste, but also about the overall experience, which is why we pay attention to every detail.
+            In addition to our delicious desserts, we also offer a variety of services to make your dessert experience even better. We can create custom cakes and desserts for any occasion, whether it's a wedding, birthday, or corporate event. We also offer catering services, allowing you to bring our desserts to your next event or party.
           </p>
         </div>
 
-        <!--Info Cards-->
-        <section>
-          <div class="card-body">
-            <div class="card-con">
-              <div class="cards">
-                <div class="card-image">
-                  <img src="/Images/Other/People smiling with ice cream.jpg" />
+        <!-- Feedback Comments -->
+        <section id="testimonials">
+          <!--Heading--->
+          <div class="testimonial-heading">
+            <span>Comments</span>
+            <h1>Customer Feedback</h1>
+          </div>
+          <!--Testimonials Box Container------>
+          <div class="testimonial-box-container">
+            <!--BOX 1-------------->
+            <div class="testimonial-box">
+              <a>
+              <!--Top------------------------->
+              <div class="box-top">
+                <!--Profile----->
+                <div class="profile">
+                  <!--Image---->
+                  <div class="profile-img">
+                    <img src="/Images/Feedback/Faces/Discord Profile Gif.gif" />
+                  </div>
+                  <!--Name And Username-->
+                  <div class="name-user">
+                    <strong>Aryan Kora</strong>
+                    <span>@YT_Aryboy240</span>
+                  </div>
                 </div>
-                <div class="card-detail">
-                  <h1>Paul & Pauline</h1>
-                  <p>
-                    "The Ice creams and cakes are too die for! They are literally the best desserts I have ever ever had!"
-                  </p>
+                <!--Reviews------>
+                <div class="reviews">
+                  <b class="fas fa-star">⭐</b>
+                  <b class="fas fa-star">⭐</b>
+                  <b class="fas fa-star">⭐</b>
+                  <b class="fas fa-star">⭐</b>
+                  <b class="fas fa-star">⭐</b>
+                  <!--Star Ratings-->
                 </div>
               </div>
-            </div>
-            <div class="card-con">
-              <div class="cards">
-                <div class="card-image">
-                  <img src="/Images/Shop location/People holding cake.jpg" />
-                </div>
-                <div class="card-detail">
-                  <h1>Ellie & Chris</h1>
-                  <p>
-                    "Our mission is to provide great customer service and the best desserts in the country to our loyal customers!"
-                  </p>
-                </div>
+              <!--Comments---------------------------------------->
+              <div class="client-comment">
+                <p>
+                  Absolutely amazing food, excellent service and brilliantly friendly staff would definitely recommend this place. Cant wait to go back and try more of their desserts.
+                </p>
               </div>
             </div>
-            <div class="card-con">
-              <div class="cards">
-                <div class="card-image">
-                  <img src="/Images/Other/Guy stangin outside store.jpg" />
+          </a>
+            <!--BOX 2-------------->
+            <div class="testimonial-box">
+              <!--Top------------------------->
+              <div class="box-top">
+                <!--Profile----->
+                <div class="profile">
+                  <!--Image---->
+                  <div class="profile-img">
+                    <img src="/Images/Feedback/Faces/xVoltageG.jpg" />
+                  </div>
+                  <!--Name And Username-->
+                  <div class="name-user">
+                    <strong>Thomas Underhill</strong>
+                    <span>@xVoltageG</span>
+                  </div>
                 </div>
-                <div class="card-detail">
-                  <h1>Football Mike</h1>
-                  <p>
-                    "Hard not to become a regular here with amazing customer service and even better food!"
-                  </p>
+                <!--Reviews------>
+                <div class="reviews">
+                  <b class="fas fa-star">⭐</b>
+                  <b class="fas fa-star">⭐</b>
+                  <b class="fas fa-star"></b>
+                  <b class="fas fa-star"></b>
+                  <b class="fas fa-star"></b>
+                  <!--Star Ratings-->
                 </div>
+              </div>
+              <!--Comments---------------------------------------->
+              <div class="client-comment">
+                <p>
+                  I pop in with my children every week. The staff are really friendly and I would definitely recommend this place for everyone that has a sweet tooth.
+                </p>
+              </div>
+            </div>
+            <!--BOX 3-------------->
+            <div class="testimonial-box">
+              <!--Top------------------------->
+              <div class="box-top">
+                <!--Profile----->
+                <div class="profile">
+                  <!--Image---->
+                  <div class="profile-img">
+                    <img src="/Images/Feedback/Faces/Luckii.gif" />
+                  </div>
+                  <!--Name And Username-->
+                  <div class="name-user">
+                    <strong>Luckii</strong>
+                    <span>@C__1</span>
+                  </div>
+                </div>
+                <!--Reviews------>
+                <div class="reviews">
+                  <b class="fas fa-star">⭐</b>
+                  <b class="fas fa-star">⭐</b>
+                  <b class="fas fa-star">⭐</b>
+                  <b class="fas fa-star">⭐</b>
+                  <b class="fas fa-star"></b>
+                  <!--Star Ratings-->
+                </div>
+              </div>
+              <!--Comments---------------------------------------->
+              <div class="client-comment">
+                <p>
+                  I came in to LDS off chance during a shopping trip in Wolverhampton town, We decided on the Easter cookie dough, Wow!! what an amazing dessert and friendly staff and good location. Definitely be back.
+                </p>
+              </div>
+            </div>
+            <!--BOX 4-------------->
+            <div class="testimonial-box">
+              <!--Top------------------------->
+              <div class="box-top">
+                <!--Profile----->
+                <div class="profile">
+                  <!--Image---->
+                  <div class="profile-img">
+                    <img src="/Images/Feedback/Faces/Discord_pfp.jpg" />
+                  </div>
+                  <!--Name And Username-->
+                  <div class="name-user">
+                    <strong>Brandon Tidmarsh</strong>
+                    <span>@BitBranGunFlakes</span>
+                  </div>
+                </div>
+                <!--Reviews------>
+                <div class="reviews">
+                  <b class="fas fa-star">⭐</b>
+                  <b class="fas fa-star">⭐</b>
+                  <b class="fas fa-star">⭐</b>
+                  <b class="fas fa-star"></b>
+                  <b class="fas fa-star"></b>
+                  <!--Star Ratings-->
+                </div>
+              </div>
+              <!--Comments---------------------------------------->
+              <div class="client-comment">
+                <p>
+                  Every day i go to work I get so tempted to just take a little look at whats in store. And every time I do, I always get carried away and end up taking too much than I needed to back home for my family. I mean i cant really complain, thier desserts are next level and deserve more credit!
+                </p>
+              </div>
+            </div>
+            <!--BOX 2-------------->
+            <div class="testimonial-box">
+              <!--Top------------------------->
+              <div class="box-top">
+                <!--Profile----->
+                <div class="profile">
+                  <!--Image---->
+                  <div class="profile-img">
+                    <img src="/Images/Feedback/Faces/The Queen.jpg" />
+                  </div>
+                  <!--Name And Username-->
+                  <div class="name-user">
+                    <strong>Elizabeth Mary</strong>
+                    <span>@QueenElizabeth_II</span>
+                  </div>
+                </div>
+                <!--Reviews------>
+                <div class="reviews">
+                  <b class="fas fa-star">⭐</b>
+                  <b class="fas fa-star">⭐</b>
+                  <b class="fas fa-star">⭐</b>
+                  <b class="fas fa-star">⭐</b>
+                  <b class="fas fa-star">⭐</b>
+                  <!--Star Ratings-->
+                </div>
+              </div>
+              <!--Comments---------------------------------------->
+              <div class="client-comment">
+                <p>
+                  I order many of their desserts online and get them hand delivered to Buckingham Palace. There are such a large variety of desserts to chose from, even i havent managed to get through them all yet. We host my birthday party every year and I cant go on without at least one of thier delicious desserts!
+                </p>
               </div>
             </div>
           </div>
         </section>
-        <!--Info Cards End-->
+        <!-- Feedback Comments End -->
 
-        <div class="text-box" style="margin-top: 75px;">
+        <div class="text-box">
           <p>
-            AN INNOVATIVE BAKERY<br>
-            Always striving for perfection, our artisanal bakers only use the finest ingredients, to lovingly handcraft Italian gelato, American-inspired cheesecakes, brownies & cookie dough. Fuelled with passion, our artisans push boundaries by creating innovative seasonal products that redefine extraordinary taste experiences.<br>
-            The bakery continuously experiments with new tastes, combining fresh ingredients & new recipes producing trendsetting delicacies. Your human senses will be mesmerised with the tantalising works of art by our master artisans.<br>
-            Your Journey Awaits...
+            We understand that everyone has different dietary needs and preferences, which is why we offer a variety of options to accommodate special diets such as gluten-free, dairy-free, and vegan. We believe that everyone deserves a sweet treat, and we are committed to making sure that everyone can enjoy our desserts.
+            Your feedback is extremely valuable to us as it helps us to improve and continue to provide the best possible experience for our customers. We take every suggestion and comment seriously and are committed to making your next visit even better than the last. Please take a moment to share your thoughts with us using our feedback form.
+            Please feel free to browse our menu and take a look at some of the mouth-watering desserts that we offer. You can also follow us on social media to stay up-to-date on our latest offerings, promotions, and events. We thank you for your support and hope to see you soon!
           </p>
-      </div>
+        </div>
       </div>
     </section>
     <!-- Page information End-->

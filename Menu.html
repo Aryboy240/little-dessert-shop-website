@@ -1,12 +1,14 @@
 <head>
-  <title>Home</title>
+  <title>Menu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--JS-->
   <script defer src="/js/theme.js"></script>
   <script defer src="/js/ScrollReveal.js"></script>
   <script src="/js/scrollreveal.min.js"></script>
   <!--CSS-->
-  <link rel="stylesheet" href="CSS/Main stylesheet.css" />
+  <link rel="stylesheet" href="/CSS/Main stylesheet.css" />
+  <link rel="stylesheet" href="/CSS/Rainbow CSS/RainbowText.css" />
+  <link rel="stylesheet" href="/CSS/ProductCard.css" />
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,7 +42,7 @@
     <script type="text/javascript">
       setInterval(function () {
         if (document.readyState == "complete") {
-          document.getElementById("loader-wrapper").style.display = "none";
+          document.getElementById("loader-wrapper").style.visibility = "hidden";
         }
       }, 100);
     </script>
@@ -58,54 +60,44 @@
       version="1.1"
       preserveAspectRatio="none">
       <path
-        d="M0 133L16.7 153C33.3 173 66.7 213 100 238C133.3 263 166.7 273 200
-        262C233.3 251 266.7 219 300 194C333.3 169 366.7 151 400 137C433.3 123
-        466.7 113 500 116C533.3 119 566.7 135 600 144C633.3 153 666.7 155 700
-        161C733.3 167 766.7 177 800 167C833.3 157 866.7 127 883.3 112L900 97L900
-        0L883.3 0C866.7 0 833.3 0 800 0C766.7 0 733.3 0 700 0C666.7 0 633.3 0
-        600 0C566.7 0 533.3 0 500 0C466.7 0 433.3 0 400 0C366.7 0 333.3 0 300
+        d="M0 103L16.7 98C33.3 93 66.7 83 100 90C133.3 97 166.7 121 200
+        117C233.3 113 266.7 81 300 74C333.3 67 366.7 85 400 98C433.3 111 466.7
+        119 500 120C533.3 121 566.7 115 600 105C633.3 95 666.7 81 700 86C733.3
+        91 766.7 115 800 123C833.3 131 866.7 123 883.3 119L900 115L900 0L883.3
+        0C866.7 0 833.3 0 800 0C766.7 0 733.3 0 700 0C666.7 0 633.3 0 600
+        0C566.7 0 533.3 0 500 0C466.7 0 433.3 0 400 0C366.7 0 333.3 0 300
         0C266.7 0 233.3 0 200 0C166.7 0 133.3 0 100 0C66.7 0 33.3 0 16.7 0L0 0Z"
         fill="#6198ff"></path>
       <path
-        d="M0 295L16.7 300C33.3 305 66.7 315 100 322C133.3 329 166.7 333 200
-        337C233.3 341 266.7 345 300 331C333.3 317 366.7 285 400 258C433.3 231
-        466.7 209 500 213C533.3 217 566.7 247 600 263C633.3 279 666.7 281 700
-        286C733.3 291 766.7 299 800 290C833.3 281 866.7 255 883.3 242L900
-        229L900 95L883.3 110C866.7 125 833.3 155 800 165C766.7 175 733.3 165 700
-        159C666.7 153 633.3 151 600 142C566.7 133 533.3 117 500 114C466.7 111
-        433.3 121 400 135C366.7 149 333.3 167 300 192C266.7 217 233.3 249 200
-        260C166.7 271 133.3 261 100 236C66.7 211 33.3 171 16.7 151L0 131Z"
-        fill="#005fee"></path>
+        d="M0 241L16.7 234C33.3 227 66.7 213 100 240C133.3 267 166.7 335 200
+        354C233.3 373 266.7 343 300 317C333.3 291 366.7 269 400 260C433.3 251
+        466.7 255 500 264C533.3 273 566.7 287 600 277C633.3 267 666.7 233 700
+        230C733.3 227 766.7 255 800 262C833.3 269 866.7 255 883.3 248L900
+        241L900 113L883.3 117C866.7 121 833.3 129 800 121C766.7 113 733.3 89 700
+        84C666.7 79 633.3 93 600 103C566.7 113 533.3 119 500 118C466.7 117 433.3
+        109 400 96C366.7 83 333.3 65 300 72C266.7 79 233.3 111 200 115C166.7 119
+        133.3 95 100 88C66.7 81 33.3 91 16.7 96L0 101Z"
+        fill="#2d77ff"></path>
       <path
-        d="M0 487L16.7 476C33.3 465 66.7 443 100 439C133.3 435 166.7 449 200
-        462C233.3 475 266.7 487 300 490C333.3 493 366.7 487 400 480C433.3 473
-        466.7 465 500 463C533.3 461 566.7 465 600 461C633.3 457 666.7 445 700
-        451C733.3 457 766.7 481 800 488C833.3 495 866.7 485 883.3 480L900
-        475L900 227L883.3 240C866.7 253 833.3 279 800 288C766.7 297 733.3 289
-        700 284C666.7 279 633.3 277 600 261C566.7 245 533.3 215 500 211C466.7
-        207 433.3 229 400 256C366.7 283 333.3 315 300 329C266.7 343 233.3 339
-        200 335C166.7 331 133.3 327 100 320C66.7 313 33.3 303 16.7 298L0 293Z"
-        fill="#004cbb"></path>
-      <path
-        d="M0 547L16.7 544C33.3 541 66.7 535 100 537C133.3 539 166.7 549 200
-        552C233.3 555 266.7 551 300 548C333.3 545 366.7 543 400 538C433.3 533
-        466.7 525 500 522C533.3 519 566.7 521 600 528C633.3 535 666.7 547 700
-        551C733.3 555 766.7 551 800 546C833.3 541 866.7 535 883.3 532L900
-        529L900 473L883.3 478C866.7 483 833.3 493 800 486C766.7 479 733.3 455
-        700 449C666.7 443 633.3 455 600 459C566.7 463 533.3 459 500 461C466.7
-        463 433.3 471 400 478C366.7 485 333.3 491 300 488C266.7 485 233.3 473
-        200 460C166.7 447 133.3 433 100 437C66.7 441 33.3 463 16.7 474L0 485Z"
-        fill="#005fee"></path>
+        d="M0 421L16.7 426C33.3 431 66.7 441 100 459C133.3 477 166.7 503 200
+        501C233.3 499 266.7 469 300 465C333.3 461 366.7 483 400 486C433.3 489
+        466.7 473 500 472C533.3 471 566.7 485 600 479C633.3 473 666.7 447 700
+        438C733.3 429 766.7 437 800 446C833.3 455 866.7 465 883.3 470L900
+        475L900 239L883.3 246C866.7 253 833.3 267 800 260C766.7 253 733.3 225
+        700 228C666.7 231 633.3 265 600 275C566.7 285 533.3 271 500 262C466.7
+        253 433.3 249 400 258C366.7 267 333.3 289 300 315C266.7 341 233.3 371
+        200 352C166.7 333 133.3 265 100 238C66.7 211 33.3 225 16.7 232L0 239Z"
+        fill="#005de8"></path>
       <path
         d="M0 601L16.7 601C33.3 601 66.7 601 100 601C133.3 601 166.7 601 200
         601C233.3 601 266.7 601 300 601C333.3 601 366.7 601 400 601C433.3 601
         466.7 601 500 601C533.3 601 566.7 601 600 601C633.3 601 666.7 601 700
         601C733.3 601 766.7 601 800 601C833.3 601 866.7 601 883.3 601L900
-        601L900 527L883.3 530C866.7 533 833.3 539 800 544C766.7 549 733.3 553
-        700 549C666.7 545 633.3 533 600 526C566.7 519 533.3 517 500 520C466.7
-        523 433.3 531 400 536C366.7 541 333.3 543 300 546C266.7 549 233.3 553
-        200 550C166.7 547 133.3 537 100 535C66.7 533 33.3 539 16.7 542L0 545Z"
-        fill="#6198ff"></path>
+        601L900 473L883.3 468C866.7 463 833.3 453 800 444C766.7 435 733.3 427
+        700 436C666.7 445 633.3 471 600 477C566.7 483 533.3 469 500 470C466.7
+        471 433.3 487 400 484C366.7 481 333.3 459 300 463C266.7 467 233.3 497
+        200 499C166.7 501 133.3 475 100 457C66.7 439 33.3 429 16.7 424L0 419Z"
+        fill="#004cbb"></path>
     </svg>
   </section>
   <!--Background End-->
@@ -567,7 +559,7 @@
     <!--Title-->
     <section>
       <div class="container">
-        <h1 id="title-font">Little Dessert Shop Home Page</h1>
+        <h1 id="title-font">Little Dessert Shop Menu Page</h1>
         <svg
           class="line-div"
           version="1.0"
@@ -726,149 +718,283 @@
         </svg>
       </div>
     </section>
+    <!--Title End-->
 
-    <!--Image Slider-->
-    <section>
-      <div class="slidecon">
-        <div class="slider">
-          <div class="slides">
-            <!--Radio Buttons Start-->
-            <input type="radio" name="radio-btn" id="radio1" />
-            <input type="radio" name="radio-btn" id="radio2" />
-            <input type="radio" name="radio-btn" id="radio3" />
-            <input type="radio" name="radio-btn" id="radio4" />
-            <!--Radio Buttons End-->
-            <!--Slide Images Start-->
-            <div class="slide first">
-              <img
-                src="/Images/Slide Show Images/Image-1.png"
-                alt="Little Desert Shop logo"
-                />
-            </div>
-            <div class="slide">
-              <img
-                src="/Images/Slide Show Images/Image-2.png"
-                alt="Ice Cream Desert Plate"
-                />
-            </div>
-            <div class="slide">
-              <img
-                src="/Images/Slide Show Images/Image-3.png"
-                alt="Chocolate chaos"
-                />
-            </div>
-            <div class="slide">
-              <img
-                src="/Images/Slide Show Images/Image-4.png"
-                alt="Little Desert Shop Logo 2"
-                />
-            </div>
-            <!--Slide Images End-->
-            <!--Automatic Navigation Start-->
-            <div class="navigation-auto">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
-              <div class="auto-btn4"></div>
-            </div>
-            <!--Automatic Navigation End-->
-          </div>
-          <!--Manual Navigation Start-->
-          <div class="navigation-manual" class="buttons">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-          </div>
-          <!--Manual Navigation End-->
-        </div>
-        <!--Image Slider End-->
-
-        <!--JavaScript for Timer-->
-        <script type="text/javascript">
-          var counter = 1;
-          setInterval(function () {
-            document.getElementById("radio" + counter).checked = true;
-            counter++;
-            if (counter > 4) {
-              counter = 1;
-            }
-          }, 7000);
-        </script>
-      </div>
-      <!--JavaScript End-->
-    </section>
-    <!--Image Slider End-->
+    <!--VIDEO-->
+    <video
+      src="Videos/Menu Page Video.mp4"
+      autoplay
+      muted
+      loop
+      class="top-vid"></video>
+    <!--VIDEO END-->
 
     <!-- Page information-->
     <section>
       <div class="home-page-text">
-        <p><font size="+3">Welcome to the Little Dessert Shop website!</font></p>
-        <div class="text-box" style="margin-bottom: 75px;">
-          <p style="transition: 0s;">
-            Discover the nation’s favourite dessert brand Little Dessert Shop® & embark on a journey of pure indulgence.<br>
-            Little Dessert Shop® is an award-winning brand that has continued to innovate to become the leading trendsetter in the UK since 2015. Serving handcrafted artisanal waffles, crepes, coffee, cheesecakes, cookie dough & gelato combined with our unrivalled dining experience to offer an experience like no other…<br>
-            Prepare to lose yourself, delve into a new taste sensation like never before & explore a new world of creations. Our irresistible dishes are lovingly hand crafted & made just for you.<br>
-            Whether it’s a catch up with a friend, a birthday or a celebration, the Little Dessert Shop® is the perfect place to indulge in life’s sweet moments.
+        <div class="text-box">
+          <p>
+            Welcome to our dessert shop menu page! We are a team of passionate dessert enthusiasts who believe that every occasion deserves a touch of sweetness. Our menu is carefully crafted to offer a wide range of delicious desserts that are sure to satisfy your sweet tooth. From classic cakes and pastries to unique and creative treats, we take great pride in using only the freshest and highest quality ingredients in our desserts, ensuring that every bite is a truly delightful experience.
+            At our dessert shop, we understand that everyone has different tastes and preferences, which is why we offer a variety of options to suit every palate. Whether you're in the mood for something rich and indulgent, light and fruity, or somewhere in between, we have something for everyone. Our menu includes a variety of cakes, pastries, cookies, and other sweet treats, all made with love and care.
+            We also believe that everyone deserves a sweet treat, which is why we offer a variety of options to accommodate special diets such as gluten-free, dairy-free, and vegan. We understand the importance of catering to these dietary needs and are committed to ensuring that everyone can enjoy our desserts.
           </p>
         </div>
 
-        <!--Info Cards-->
+        <!--Menu Cards-->
         <section>
-          <div class="card-body">
-            <div class="card-con">
-              <div class="cards">
-                <div class="card-image">
-                  <img src="/Images/Other/People smiling with ice cream.jpg" />
+          <div class="Menu-card-body">
+            <div class="Menu-card-con">
+              <div class="Menu-cards">
+                <div class="Menu-card-image">
+                  <img
+                    id="picture"
+                    src="Images/Shop Menu/Menus/Main Menu.png"
+                    alt="Desert Shop Menu"
+                    />
                 </div>
-                <div class="card-detail">
-                  <h1>Paul & Pauline</h1>
+                <div class="Menu-card-detail">
+                  <h1>Little Dessert Shop Menu</h1>
                   <p>
-                    "The Ice creams and cakes are too die for! They are literally the best desserts I have ever ever had!"
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-con">
-              <div class="cards">
-                <div class="card-image">
-                  <img src="/Images/Shop location/People holding cake.jpg" />
-                </div>
-                <div class="card-detail">
-                  <h1>Ellie & Chris</h1>
-                  <p>
-                    "Our mission is to provide great customer service and the best desserts in the country to our loyal customers!"
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-con">
-              <div class="cards">
-                <div class="card-image">
-                  <img src="/Images/Other/Guy stangin outside store.jpg" />
-                </div>
-                <div class="card-detail">
-                  <h1>Football Mike</h1>
-                  <p>
-                    "Hard not to become a regular here with amazing customer service and even better food!"
+                    Choose any of the desserts 'The Little Dessert Shop' has to offer from this wide range of selections! <br> These range from:<br> •Cookies, Donuts & Cakes <br> •Waffles, Snacks & Ice Cream <br> •Coctails, Soft Drinks and Hot Drinks! <br> You can also click on the image to enhance the menu sheet.
                   </p>
                 </div>
               </div>
             </div>
           </div>
+          <div id="myModal" class="modal">
+            <a href="/Images/Shop Menu/Menus/Main Menu.png" download>
+              <svg
+                class="download"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="50"
+                xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                </g>
+                <g>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" x2="12" y1="15" y2="3"></line>
+                </g>
+              </svg>
+            </a>
+            <span class="close">&times;</span>
+            <img class="modal-content" id="fullPicture" />
+            <div id="caption"></div>
+          </div>
+
+          <script>
+            var modal = document.getElementById("myModal");
+            var img = document.getElementById("picture");
+            var modalImg = document.getElementById("fullPicture");
+            var captionText = document.getElementById("caption");
+
+            img.onclick = function () {
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            };
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function () {
+              modal.style.display = "none";
+            };
+          </script>
         </section>
         <!--Info Cards End-->
 
-        <div class="text-box" style="margin-top: 75px;">
+        <div class="text-box">
           <p>
-            AN INNOVATIVE BAKERY<br>
-            Always striving for perfection, our artisanal bakers only use the finest ingredients, to lovingly handcraft Italian gelato, American-inspired cheesecakes, brownies & cookie dough. Fuelled with passion, our artisans push boundaries by creating innovative seasonal products that redefine extraordinary taste experiences.<br>
-            The bakery continuously experiments with new tastes, combining fresh ingredients & new recipes producing trendsetting delicacies. Your human senses will be mesmerised with the tantalising works of art by our master artisans.<br>
-            Your Journey Awaits...
+            In addition to our regular menu items, we also offer seasonal and limited edition desserts that are sure to delight your taste buds. From pumpkin spice cakes in the fall to peppermint bark in the winter, our seasonal desserts are the perfect way to celebrate the flavors of the season.
+            Please take a moment to browse our menu and discover the perfect dessert for your next occasion. We are also happy to work with you to create custom cakes and desserts for weddings, birthdays, and other special events. We thank you for your support and hope to see you soon!
           </p>
-      </div>
+        </div>
+
+        <!--RAINBOW TEXT-->
+        <section>
+          <div class="rainbow-con">
+            <ul class="c-rainbow">
+              <li class="c-rainbow__layer c-rainbow__layer--white">
+                ORDER ITEMS
+              </li>
+              <li class="c-rainbow__layer c-rainbow__layer--orange">
+                ORDER ITEMS
+              </li>
+              <li class="c-rainbow__layer c-rainbow__layer--red">
+                ORDER ITEMS
+              </li>
+              <li class="c-rainbow__layer c-rainbow__layer--violet">
+                ORDER ITEMS
+              </li>
+              <li class="c-rainbow__layer c-rainbow__layer--blue">
+                ORDER ITEMS
+              </li>
+              <li class="c-rainbow__layer c-rainbow__layer--green">
+                ORDER ITEMS
+              </li>
+              <li class="c-rainbow__layer c-rainbow__layer--yellow">
+                ORDER ITEMS
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--RAINBOW TEXT END-->
       </div>
     </section>
+
+    <!--Product Cards-->
+    <section>
+      <!--SECTION 1-->
+      <section class="product-card-con" style="padding-bottom: 50px">
+        <!--Cookies-->
+        <div class="product-card">
+          <div class="card-circle"></div>
+          <div class="product-card-content">
+            <h2>Cookies</h2>
+            <p>
+              Satisfy your sweet cravings with our freshly baked cookies! From classic chocolate chip to unique flavors like salted caramel.
+            </p>
+            <a href="#">Buy for £0.50 each</a>
+          </div>
+          <img
+            class="imageSize-1"
+            src="/Images/Shop Menu/Icons/Food/Cookies.png"
+            />
+        </div>
+        <!--Cakes-->
+        <div class="product-card">
+          <div class="card-circle"></div>
+          <div class="product-card-content">
+            <h2>Cakes</h2>
+            <p>
+              Treat yourself to a slice of heaven with our irresistible cakes! From decadent chocolate fudge to light and fluffy sponge cakes.
+            </p>
+            <a href="#">Starting from £1.50</a>
+          </div>
+          <img
+            class="imageSize-2"
+            src="/Images/Shop Menu/Icons/Food/Biscoff Cake.png"
+            />
+        </div>
+        <!--Donut-->
+        <div class="product-card">
+          <div class="card-circle"></div>
+          <div class="product-card-content">
+            <h2>Donuts</h2>
+            <p>
+              Our dessert shop offers a mouthwatering range of donuts, from classic glazed to fun and creative flavors like maple bacon and Nutella-filled.
+            </p>
+            <a href="#">Buy for £0.75 each</a>
+          </div>
+          <img
+            class="imageSize-3"
+            src="/Images/Shop Menu/Icons/Food/Donut.png"
+            />
+        </div>
+      </section>
+      <!--SECTION 2-->
+      <section class="product-card-con" style="padding-bottom: 50px">
+        <!--Waffle-->
+        <div class="product-card">
+          <div class="card-circle-2"></div>
+          <div class="product-card-content">
+            <h2>Waffles</h2>
+            <p>
+              Wake up to the warm and crispy goodness of our freshly made waffles including fun and indulgent flavors like strawberries & cream.
+            </p>
+            <a href="#">Buy for £1.25</a>
+          </div>
+          <img
+            class="imageSize-4"
+            src="/Images/Shop Menu/Icons/Food/Waffle.png"
+            />
+        </div>
+        <!--Snacks-->
+        <div class="product-card">
+          <div class="card-circle-2"></div>
+          <div class="product-card-content">
+            <h2>Snacks</h2>
+            <p>
+              Indulge in our scrumptious range of snacks, including mouthwatering muffins and decadent chocolates! 
+            </p>
+            <a href="#">Buy for £0.15</a>
+          </div>
+          <img
+            class="imageSize-5"
+            src="/Images/Shop Menu/Icons/Food/Cornflake muffin.png"
+            />
+        </div>
+        <!--Ice Cream-->
+        <div class="product-card">
+          <div class="card-circle-2"></div>
+          <div class="product-card-content">
+            <h2>Ice Cream</h2>
+            <p>
+              Cool off with our heavenly ice cream from classic vanilla and chocolate to creative options like salted caramel and strawberry cheesecake!
+            </p>
+            <a href="#">Starting from £0.99</a>
+          </div>
+          <img
+            class="imageSize-6"
+            src="/Images/Shop Menu/Icons/Food/Ice Cream Sundae.png"
+            />
+        </div>
+      </section>
+      <!--SECTION 3-->
+      <section class="product-card-con" style="padding-bottom: 50px">
+        <!--Cocktail-->
+        <div class="product-card">
+          <div class="card-circle-3"></div>
+          <div class="product-card-content">
+            <h2>Cocktails</h2>
+            <p>
+              Unwind with our tantalizing cocktails from classic mojitos and margaritas to innovative creations like passion fruit martinis and lavender gin fizzes!
+            </p>
+            <a href="#">Starting from £4.99</a>
+          </div>
+          <img
+            class="imageSize-7"
+            src="/Images/Shop Menu/Icons/Food/Cocktail.png"
+            />
+        </div>
+        <!--Soft Drinks-->
+        <div class="product-card">
+          <div class="card-circle-3"></div>
+          <div class="product-card-content">
+            <h2>Soft Drinks</h2>
+            <p>
+              Quench your thirst with our refreshing soft drinks from classic cola and lemonade to healthier options like iced tea and fruit juices!
+            </p>
+            <a href="#">Buy for £0.65</a>
+          </div>
+          <img
+            class="imageSize-8"
+            src="/Images/Shop Menu/Icons/Food/Pepsi.png"
+            />
+        </div>
+        <!--Hot Drinks-->
+        <div class="product-card">
+          <div class="card-circle-3"></div>
+          <div class="product-card-content">
+            <h2>Hot Drinks</h2>
+            <p>
+              Warm up with our comforting hot drinks from classic coffee and tea to indulgent hot chocolate and specialty lattes!
+            </p>
+            <a href="#">Starting from £2.50</a>
+          </div>
+          <img
+            class="imageSize-9"
+            src="/Images/Shop Menu/Icons/Food/Hot Drink.png"
+            />
+        </div>
+      </section>
+    </section>
+    <!--Product Cards End-->
+
     <!-- Page information End-->
   </main>
 </body>

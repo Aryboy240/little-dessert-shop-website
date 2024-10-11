@@ -1,12 +1,15 @@
 <head>
-  <title>Home</title>
+  <title>Birthday</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--JS-->
   <script defer src="/js/theme.js"></script>
   <script defer src="/js/ScrollReveal.js"></script>
   <script src="/js/scrollreveal.min.js"></script>
   <!--CSS-->
-  <link rel="stylesheet" href="CSS/Main stylesheet.css" />
+  <link rel="stylesheet" href="/CSS/Main stylesheet.css" />
+  <link rel="stylesheet" href="/CSS/Rainbow CSS/RainbowText.css" />
+  <link rel="stylesheet" href="/CSS/ProductCard.css" />
+  <link rel="stylesheet" href="/CSS/Account.css" />
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,7 +43,7 @@
     <script type="text/javascript">
       setInterval(function () {
         if (document.readyState == "complete") {
-          document.getElementById("loader-wrapper").style.display = "none";
+          document.getElementById("loader-wrapper").style.visibility = "hidden";
         }
       }, 100);
     </script>
@@ -49,64 +52,26 @@
 
   <!--Background-->
   <section id="back-svg">
-    <svg
-      class="background"
-      id="visual"
-      viewBox="0 0 900 600"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      version="1.1"
-      preserveAspectRatio="none">
-      <path
-        d="M0 133L16.7 153C33.3 173 66.7 213 100 238C133.3 263 166.7 273 200
-        262C233.3 251 266.7 219 300 194C333.3 169 366.7 151 400 137C433.3 123
-        466.7 113 500 116C533.3 119 566.7 135 600 144C633.3 153 666.7 155 700
-        161C733.3 167 766.7 177 800 167C833.3 157 866.7 127 883.3 112L900 97L900
-        0L883.3 0C866.7 0 833.3 0 800 0C766.7 0 733.3 0 700 0C666.7 0 633.3 0
-        600 0C566.7 0 533.3 0 500 0C466.7 0 433.3 0 400 0C366.7 0 333.3 0 300
-        0C266.7 0 233.3 0 200 0C166.7 0 133.3 0 100 0C66.7 0 33.3 0 16.7 0L0 0Z"
-        fill="#6198ff"></path>
-      <path
-        d="M0 295L16.7 300C33.3 305 66.7 315 100 322C133.3 329 166.7 333 200
-        337C233.3 341 266.7 345 300 331C333.3 317 366.7 285 400 258C433.3 231
-        466.7 209 500 213C533.3 217 566.7 247 600 263C633.3 279 666.7 281 700
-        286C733.3 291 766.7 299 800 290C833.3 281 866.7 255 883.3 242L900
-        229L900 95L883.3 110C866.7 125 833.3 155 800 165C766.7 175 733.3 165 700
-        159C666.7 153 633.3 151 600 142C566.7 133 533.3 117 500 114C466.7 111
-        433.3 121 400 135C366.7 149 333.3 167 300 192C266.7 217 233.3 249 200
-        260C166.7 271 133.3 261 100 236C66.7 211 33.3 171 16.7 151L0 131Z"
-        fill="#005fee"></path>
-      <path
-        d="M0 487L16.7 476C33.3 465 66.7 443 100 439C133.3 435 166.7 449 200
-        462C233.3 475 266.7 487 300 490C333.3 493 366.7 487 400 480C433.3 473
-        466.7 465 500 463C533.3 461 566.7 465 600 461C633.3 457 666.7 445 700
-        451C733.3 457 766.7 481 800 488C833.3 495 866.7 485 883.3 480L900
-        475L900 227L883.3 240C866.7 253 833.3 279 800 288C766.7 297 733.3 289
-        700 284C666.7 279 633.3 277 600 261C566.7 245 533.3 215 500 211C466.7
-        207 433.3 229 400 256C366.7 283 333.3 315 300 329C266.7 343 233.3 339
-        200 335C166.7 331 133.3 327 100 320C66.7 313 33.3 303 16.7 298L0 293Z"
-        fill="#004cbb"></path>
-      <path
-        d="M0 547L16.7 544C33.3 541 66.7 535 100 537C133.3 539 166.7 549 200
-        552C233.3 555 266.7 551 300 548C333.3 545 366.7 543 400 538C433.3 533
-        466.7 525 500 522C533.3 519 566.7 521 600 528C633.3 535 666.7 547 700
-        551C733.3 555 766.7 551 800 546C833.3 541 866.7 535 883.3 532L900
-        529L900 473L883.3 478C866.7 483 833.3 493 800 486C766.7 479 733.3 455
-        700 449C666.7 443 633.3 455 600 459C566.7 463 533.3 459 500 461C466.7
-        463 433.3 471 400 478C366.7 485 333.3 491 300 488C266.7 485 233.3 473
-        200 460C166.7 447 133.3 433 100 437C66.7 441 33.3 463 16.7 474L0 485Z"
-        fill="#005fee"></path>
-      <path
-        d="M0 601L16.7 601C33.3 601 66.7 601 100 601C133.3 601 166.7 601 200
-        601C233.3 601 266.7 601 300 601C333.3 601 366.7 601 400 601C433.3 601
-        466.7 601 500 601C533.3 601 566.7 601 600 601C633.3 601 666.7 601 700
-        601C733.3 601 766.7 601 800 601C833.3 601 866.7 601 883.3 601L900
-        601L900 527L883.3 530C866.7 533 833.3 539 800 544C766.7 549 733.3 553
-        700 549C666.7 545 633.3 533 600 526C566.7 519 533.3 517 500 520C466.7
-        523 433.3 531 400 536C366.7 541 333.3 543 300 546C266.7 549 233.3 553
-        200 550C166.7 547 133.3 537 100 535C66.7 533 33.3 539 16.7 542L0 545Z"
-        fill="#6198ff"></path>
-    </svg>
+    <svg id="visual" viewBox="0 0 900 600" class="background"
+      preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 67L30
+        75C60 83 120 99 180 106C240 113 300 111 360 105C420 99 480 89 540 83C600
+        77 660 75 720 80C780 85 840 97 870 103L900 109L900 0L870 0C840 0 780 0
+        720 0C660 0 600 0 540 0C480 0 420 0 360 0C300 0 240 0 180 0C120 0 60 0
+        30 0L0 0Z" fill="#6198ff"></path><path d="M0 133L30 145C60 157 120 181
+        180 204C240 227 300 249 360 241C420 233 480 195 540 190C600 185 660 213
+        720 226C780 239 840 237 870 236L900 235L900 107L870 101C840 95 780 83
+        720 78C660 73 600 75 540 81C480 87 420 97 360 103C300 109 240 111 180
+        104C120 97 60 81 30 73L0 65Z" fill="#2d77ff"></path><path d="M0 385L30
+        395C60 405 120 425 180 429C240 433 300 421 360 420C420 419 480 429 540
+        435C600 441 660 443 720 436C780 429 840 413 870 405L900 397L900 233L870
+        234C840 235 780 237 720 224C660 211 600 183 540 188C480 193 420 231 360
+        239C300 247 240 225 180 202C120 179 60 155 30 143L0 131Z"
+        fill="#005de8"></path><path d="M0 601L30 601C60 601 120 601 180 601C240
+        601 300 601 360 601C420 601 480 601 540 601C600 601 660 601 720 601C780
+        601 840 601 870 601L900 601L900 395L870 403C840 411 780 427 720 434C660
+        441 600 439 540 433C480 427 420 417 360 418C300 419 240 431 180 427C120
+        423 60 403 30 393L0 383Z" fill="#004cbb"></path></svg>
   </section>
   <!--Background End-->
 
@@ -567,7 +532,7 @@
     <!--Title-->
     <section>
       <div class="container">
-        <h1 id="title-font">Little Dessert Shop Home Page</h1>
+        <h1 id="title-font">Little Dessert Shop Birthday Page</h1>
         <svg
           class="line-div"
           version="1.0"
@@ -727,148 +692,280 @@
       </div>
     </section>
 
-    <!--Image Slider-->
-    <section>
-      <div class="slidecon">
-        <div class="slider">
-          <div class="slides">
-            <!--Radio Buttons Start-->
-            <input type="radio" name="radio-btn" id="radio1" />
-            <input type="radio" name="radio-btn" id="radio2" />
-            <input type="radio" name="radio-btn" id="radio3" />
-            <input type="radio" name="radio-btn" id="radio4" />
-            <!--Radio Buttons End-->
-            <!--Slide Images Start-->
-            <div class="slide first">
-              <img
-                src="/Images/Slide Show Images/Image-1.png"
-                alt="Little Desert Shop logo"
-                />
-            </div>
-            <div class="slide">
-              <img
-                src="/Images/Slide Show Images/Image-2.png"
-                alt="Ice Cream Desert Plate"
-                />
-            </div>
-            <div class="slide">
-              <img
-                src="/Images/Slide Show Images/Image-3.png"
-                alt="Chocolate chaos"
-                />
-            </div>
-            <div class="slide">
-              <img
-                src="/Images/Slide Show Images/Image-4.png"
-                alt="Little Desert Shop Logo 2"
-                />
-            </div>
-            <!--Slide Images End-->
-            <!--Automatic Navigation Start-->
-            <div class="navigation-auto">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
-              <div class="auto-btn4"></div>
-            </div>
-            <!--Automatic Navigation End-->
-          </div>
-          <!--Manual Navigation Start-->
-          <div class="navigation-manual" class="buttons">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-          </div>
-          <!--Manual Navigation End-->
-        </div>
-        <!--Image Slider End-->
-
-        <!--JavaScript for Timer-->
-        <script type="text/javascript">
-          var counter = 1;
-          setInterval(function () {
-            document.getElementById("radio" + counter).checked = true;
-            counter++;
-            if (counter > 4) {
-              counter = 1;
-            }
-          }, 7000);
-        </script>
-      </div>
-      <!--JavaScript End-->
-    </section>
-    <!--Image Slider End-->
+    <!--VIDEO-->
+    <video
+      src="Videos/Birthday Page Video.mp4"
+      autoplay
+      muted
+      loop
+      class="top-vid"></video>
+    <!--VIDEO END-->
 
     <!-- Page information-->
     <section>
       <div class="home-page-text">
-        <p><font size="+3">Welcome to the Little Dessert Shop website!</font></p>
-        <div class="text-box" style="margin-bottom: 75px;">
-          <p style="transition: 0s;">
-            Discover the nation’s favourite dessert brand Little Dessert Shop® & embark on a journey of pure indulgence.<br>
-            Little Dessert Shop® is an award-winning brand that has continued to innovate to become the leading trendsetter in the UK since 2015. Serving handcrafted artisanal waffles, crepes, coffee, cheesecakes, cookie dough & gelato combined with our unrivalled dining experience to offer an experience like no other…<br>
-            Prepare to lose yourself, delve into a new taste sensation like never before & explore a new world of creations. Our irresistible dishes are lovingly hand crafted & made just for you.<br>
-            Whether it’s a catch up with a friend, a birthday or a celebration, the Little Dessert Shop® is the perfect place to indulge in life’s sweet moments.
+        <div class="text-box">
+          <p>
+            Welcome to our special birthday page! At our dessert shop, we believe that birthdays are a time for celebration and indulgence, and we are here to help you make your special day even sweeter. We offer a variety of delicious desserts that are perfect for birthday celebrations, including custom cakes, cupcakes, cookies, and more. Our team of expert bakers and decorators is here to help you create the perfect dessert for your special occasion.
+            Our custom cakes are made with the freshest and highest quality ingredients and can be personalized to your liking. Whether you prefer a classic vanilla or chocolate cake, or something more unique like a red velvet or carrot cake, we can create the perfect cake to suit your taste. We also offer a variety of fillings, frostings, and decorations to make your cake truly one-of-a-kind.
           </p>
         </div>
 
-        <!--Info Cards-->
+        <!--Menu Cards-->
         <section>
-          <div class="card-body">
-            <div class="card-con">
-              <div class="cards">
-                <div class="card-image">
-                  <img src="/Images/Other/People smiling with ice cream.jpg" />
+          <div class="Menu-card-body">
+            <div class="Menu-card-con">
+              <div class="Menu-cards">
+                <div class="Birthday-card-image">
+                  <img
+                    id="picture"
+                    src="Images/Shop Menu/Menus/Birthday Party Menu.png"
+                    alt="Desert Shop Birthday Special Menu"
+                    />
                 </div>
-                <div class="card-detail">
-                  <h1>Paul & Pauline</h1>
+                <div class="Birthday-card-detail">
+                  <h1>Little Dessert Shop Birthday Menu</h1>
                   <p>
-                    "The Ice creams and cakes are too die for! They are literally the best desserts I have ever ever had!"
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-con">
-              <div class="cards">
-                <div class="card-image">
-                  <img src="/Images/Shop location/People holding cake.jpg" />
-                </div>
-                <div class="card-detail">
-                  <h1>Ellie & Chris</h1>
-                  <p>
-                    "Our mission is to provide great customer service and the best desserts in the country to our loyal customers!"
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-con">
-              <div class="cards">
-                <div class="card-image">
-                  <img src="/Images/Other/Guy stangin outside store.jpg" />
-                </div>
-                <div class="card-detail">
-                  <h1>Football Mike</h1>
-                  <p>
-                    "Hard not to become a regular here with amazing customer service and even better food!"
+                    Party on all night long by chosing 'The Little Dessert Shop' to help give you your best birthday ever! <br> Chose from our special birthday Menu, including:<br> •Birthday Cakes, Hampers and Presents <br> •Piñata, Birthday Snacks and Balloons <br> •Coctails, Soft Drinks and Hot Drinks! <br> You can also click on the image to enhance the menu sheet.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <!--Info Cards End-->
+          <div id="myModal" class="modal">
+            <a href="/Images/Shop Menu/Menus/Birthday Party Menu.png" download>
+              <svg
+                class="download"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="50"
+                xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                </g>
+                <g>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" x2="12" y1="15" y2="3"></line>
+                </g>
+              </svg>
+            </a>
+            <span class="close">&times;</span>
+            <img class="modal-content" id="fullPicture" />
+            <div id="caption"></div>
+          </div>
 
-        <div class="text-box" style="margin-top: 75px;">
+          <script>
+            var modal = document.getElementById("myModal");
+            var img = document.getElementById("picture");
+            var modalImg = document.getElementById("fullPicture");
+            var captionText = document.getElementById("caption");
+
+            img.onclick = function () {
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            };
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function () {
+              modal.style.display = "none";
+            };
+          </script>
+        </section>
+        <!--Menu Cards End-->
+
+        <div class="text-box">
           <p>
-            AN INNOVATIVE BAKERY<br>
-            Always striving for perfection, our artisanal bakers only use the finest ingredients, to lovingly handcraft Italian gelato, American-inspired cheesecakes, brownies & cookie dough. Fuelled with passion, our artisans push boundaries by creating innovative seasonal products that redefine extraordinary taste experiences.<br>
-            The bakery continuously experiments with new tastes, combining fresh ingredients & new recipes producing trendsetting delicacies. Your human senses will be mesmerised with the tantalising works of art by our master artisans.<br>
-            Your Journey Awaits...
+            In addition to cakes, we also offer a variety of other sweet treats that are perfect for birthday celebrations. Our cupcakes, cookies, and dessert platters are a great way to add some extra sweetness to your party. We can even create custom desserts to match your party theme or color scheme.
+            At our dessert shop, we understand that birthdays are a special occasion, which is why we strive to provide exceptional service to all of our customers. We are committed to making your birthday celebration as memorable as possible and are here to help you every step of the way. Please feel free to browse our menu and contact us to discuss your custom dessert needs. We thank you for considering us for your special day and look forward to making your birthday celebration even sweeter!
           </p>
-      </div>
+        </div>
+
+        <!--RAINBOW TEXT-->
+        <section>
+          <div class="rainbow-con">
+            <ul class="c-rainbow">
+              <li class="c-rainbow__layer c-rainbow__layer--white">
+                ORDER ITEMS
+              </li>
+              <li class="c-rainbow__layer c-rainbow__layer--orange">
+                ORDER ITEMS
+              </li>
+              <li class="c-rainbow__layer c-rainbow__layer--red">
+                ORDER ITEMS
+              </li>
+              <li class="c-rainbow__layer c-rainbow__layer--violet">
+                ORDER ITEMS
+              </li>
+              <li class="c-rainbow__layer c-rainbow__layer--blue">
+                ORDER ITEMS
+              </li>
+              <li class="c-rainbow__layer c-rainbow__layer--green">
+                ORDER ITEMS
+              </li>
+              <li class="c-rainbow__layer c-rainbow__layer--yellow">
+                ORDER ITEMS
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--RAINBOW TEXT END-->
       </div>
     </section>
+
+    <!--Product Cards-->
+    <section>
+      <!--SECTION 1-->
+      <section class="product-card-con" style="padding-bottom: 50px">
+        <!--Birthday Cake-->
+        <div class="product-card">
+          <div class="card-circle"></div>
+          <div class="product-card-content">
+            <h2>Birthday Cake</h2>
+            <p>
+              Celebrate your special day with a delicious and festive birthday cake! There are a range of options, from classic vanilla to more creative flavors like red velvet and caramel. 
+            </p>
+            <a href="#">Buy for £7.50</a>
+          </div>
+          <img
+            class="birthdayImageSize-1"
+            src="/Images/Shop Menu/Icons/Birthday/Birthday Cake.png"
+            />
+        </div>
+        <!--Hamper-->
+        <div class="product-card">
+          <div class="card-circle"></div>
+          <div class="product-card-content">
+            <h2>Birthday Hamper</h2>
+            <p>
+              Make someone's birthday extra special with our birthday hamper! Chose from gourmet chocolates and savory snacks.
+            </p>
+            <a href="#">Buy for £5.20</a>
+          </div>
+          <img
+            class="birthdayImageSize-2"
+            src="/Images/Shop Menu/Icons/Birthday/Hamper.png"
+            />
+        </div>
+        <!--Birthday Present-->
+        <div class="product-card">
+          <div class="card-circle"></div>
+          <div class="product-card-content">
+            <h2>Suprise Present</h2>
+            <p>
+              Make someone's day with a surprise present from our shop! Chose from luxurious spa sets and personalized keepsakes.
+            </p>
+            <a href="#">Buy for £6.55</a>
+          </div>
+          <img
+            class="birthdayImageSize-3"
+            src="/Images/Shop Menu/Icons/Birthday/Present.png"
+            />
+        </div>
+      </section>
+      <!--SECTION 2-->
+      <section class="product-card-con" style="padding-bottom: 50px">
+        <!--Pinata-->
+        <div class="product-card">
+          <div class="card-circle-2"></div>
+          <div class="product-card-content">
+            <h2>Piñata</h2>
+            <p>
+              Add some fun and excitement to your next celebration with our festive piñata, filled with an assortment of candies and treats.
+            </p>
+            <a href="#">Buy for £3.99</a>
+          </div>
+          <img
+            class="birthdayImageSize-4"
+            src="/Images/Shop Menu/Icons/Birthday/Pinata.png"
+            />
+        </div>
+        <!--Birthday Snacks-->
+        <div class="product-card">
+          <div class="card-circle-2"></div>
+          <div class="product-card-content">
+            <h2>Birthday Snacks</h2>
+            <p>
+              Celebrate your birthday with our delicious selection of birthday snacks! Chose from gourmet popcorn to pretzels and candy floss.
+            </p>
+            <a href="#">Buy for £2.20</a>
+          </div>
+          <img
+            class="birthdayImageSize-5"
+            src="/Images/Shop Menu/Icons/Birthday/Birthday Snacks.png"
+            />
+        </div>
+        <!--Balloons-->
+        <div class="product-card">
+          <div class="card-circle-2"></div>
+          <div class="product-card-content">
+            <h2>Balloons</h2>
+            <p>
+              Add some color and excitement to your celebration with our festive balloons! Perfect for birthdays, weddings, and other special occasions.
+            </p>
+            <a href="#">Buy for £0.20</a>
+          </div>
+          <img
+            class="birthdayImageSize-6"
+            src="/Images/Shop Menu/Icons/Birthday/Balloon.png"
+            />
+        </div>
+      </section>
+      <!--SECTION 3-->
+      <section class="product-card-con" style="padding-bottom: 50px">
+        <!--Coctail-->
+        <div class="product-card">
+          <div class="card-circle-3"></div>
+          <div class="product-card-content">
+            <h2>Coctails</h2>
+            <p>
+              Unwind with our tantalizing cocktails from classic mojitos and margaritas to innovative creations like passion fruit martinis and lavender gin fizzes!
+            </p>
+            <a href="#">Starting from £4.99</a>
+          </div>
+          <img
+            class="birthdayImageSize-7"
+            src="/Images/Shop Menu/Icons/Food/Cocktail.png"
+            />
+        </div>
+        <!--Soft Drinks-->
+        <div class="product-card">
+          <div class="card-circle-3"></div>
+          <div class="product-card-content">
+            <h2>Soft Drinks</h2>
+            <p>
+              Quench your thirst with our refreshing soft drinks from classic cola and lemonade to healthier options like iced tea and fruit juices!
+            </p>
+            <a href="#">Buy for £0.65</a>
+          </div>
+          <img
+            class="birthdayImageSize-8"
+            src="/Images/Shop Menu/Icons/Food/Pepsi.png"
+            />
+        </div>
+        <!--Hot Drinks-->
+        <div class="product-card">
+          <div class="card-circle-3"></div>
+          <div class="product-card-content">
+            <h2>Hot Drinks</h2>
+            <p>
+              Warm up with our comforting hot drinks from classic coffee and tea to indulgent hot chocolate and specialty lattes!
+            </p>
+            <a href="#">Starting from £2.50</a>
+          </div>
+          <img
+            class="birthdayImageSize-9"
+            src="/Images/Shop Menu/Icons/Food/Hot Drink.png"
+            />
+        </div>
+      </section>
+    </section>
+    <!--Product Cards End-->
+
     <!-- Page information End-->
   </main>
 </body>

@@ -1,12 +1,13 @@
 <head>
-  <title>Home</title>
+  <title>Store</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--JS-->
   <script defer src="/js/theme.js"></script>
   <script defer src="/js/ScrollReveal.js"></script>
   <script src="/js/scrollreveal.min.js"></script>
   <!--CSS-->
-  <link rel="stylesheet" href="CSS/Main stylesheet.css" />
+  <link rel="stylesheet" href="/CSS/Main stylesheet.css" />
+  <link rel="stylesheet" href="/CSS/Contact Form.css">
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,7 +41,7 @@
     <script type="text/javascript">
       setInterval(function () {
         if (document.readyState == "complete") {
-          document.getElementById("loader-wrapper").style.display = "none";
+          document.getElementById("loader-wrapper").style.visibility = "hidden";
         }
       }, 100);
     </script>
@@ -50,62 +51,39 @@
   <!--Background-->
   <section id="back-svg">
     <svg
-      class="background"
       id="visual"
       viewBox="0 0 900 600"
+      class="background"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       version="1.1"
       preserveAspectRatio="none">
       <path
-        d="M0 133L16.7 153C33.3 173 66.7 213 100 238C133.3 263 166.7 273 200
-        262C233.3 251 266.7 219 300 194C333.3 169 366.7 151 400 137C433.3 123
-        466.7 113 500 116C533.3 119 566.7 135 600 144C633.3 153 666.7 155 700
-        161C733.3 167 766.7 177 800 167C833.3 157 866.7 127 883.3 112L900 97L900
-        0L883.3 0C866.7 0 833.3 0 800 0C766.7 0 733.3 0 700 0C666.7 0 633.3 0
-        600 0C566.7 0 533.3 0 500 0C466.7 0 433.3 0 400 0C366.7 0 333.3 0 300
-        0C266.7 0 233.3 0 200 0C166.7 0 133.3 0 100 0C66.7 0 33.3 0 16.7 0L0 0Z"
+        d="M0 67L30 75C60 83 120 99 180 106C240 113 300 111 360 105C420 99 480
+        89 540 83C600 77 660 75 720 80C780 85 840 97 870 103L900 109L900 0L870
+        0C840 0 780 0 720 0C660 0 600 0 540 0C480 0 420 0 360 0C300 0 240 0 180
+        0C120 0 60 0 30 0L0 0Z"
         fill="#6198ff"></path>
       <path
-        d="M0 295L16.7 300C33.3 305 66.7 315 100 322C133.3 329 166.7 333 200
-        337C233.3 341 266.7 345 300 331C333.3 317 366.7 285 400 258C433.3 231
-        466.7 209 500 213C533.3 217 566.7 247 600 263C633.3 279 666.7 281 700
-        286C733.3 291 766.7 299 800 290C833.3 281 866.7 255 883.3 242L900
-        229L900 95L883.3 110C866.7 125 833.3 155 800 165C766.7 175 733.3 165 700
-        159C666.7 153 633.3 151 600 142C566.7 133 533.3 117 500 114C466.7 111
-        433.3 121 400 135C366.7 149 333.3 167 300 192C266.7 217 233.3 249 200
-        260C166.7 271 133.3 261 100 236C66.7 211 33.3 171 16.7 151L0 131Z"
-        fill="#005fee"></path>
+        d="M0 133L30 145C60 157 120 181 180 204C240 227 300 249 360 241C420 233
+        480 195 540 190C600 185 660 213 720 226C780 239 840 237 870 236L900
+        235L900 107L870 101C840 95 780 83 720 78C660 73 600 75 540 81C480 87 420
+        97 360 103C300 109 240 111 180 104C120 97 60 81 30 73L0 65Z"
+        fill="#2d77ff"></path>
       <path
-        d="M0 487L16.7 476C33.3 465 66.7 443 100 439C133.3 435 166.7 449 200
-        462C233.3 475 266.7 487 300 490C333.3 493 366.7 487 400 480C433.3 473
-        466.7 465 500 463C533.3 461 566.7 465 600 461C633.3 457 666.7 445 700
-        451C733.3 457 766.7 481 800 488C833.3 495 866.7 485 883.3 480L900
-        475L900 227L883.3 240C866.7 253 833.3 279 800 288C766.7 297 733.3 289
-        700 284C666.7 279 633.3 277 600 261C566.7 245 533.3 215 500 211C466.7
-        207 433.3 229 400 256C366.7 283 333.3 315 300 329C266.7 343 233.3 339
-        200 335C166.7 331 133.3 327 100 320C66.7 313 33.3 303 16.7 298L0 293Z"
+        d="M0 385L30 395C60 405 120 425 180 429C240 433 300 421 360 420C420 419
+        480 429 540 435C600 441 660 443 720 436C780 429 840 413 870 405L900
+        397L900 233L870 234C840 235 780 237 720 224C660 211 600 183 540 188C480
+        193 420 231 360 239C300 247 240 225 180 202C120 179 60 155 30 143L0
+        131Z"
+        fill="#005de8"></path>
+      <path
+        d="M0 601L30 601C60 601 120 601 180 601C240 601 300 601 360 601C420 601
+        480 601 540 601C600 601 660 601 720 601C780 601 840 601 870 601L900
+        601L900 395L870 403C840 411 780 427 720 434C660 441 600 439 540 433C480
+        427 420 417 360 418C300 419 240 431 180 427C120 423 60 403 30 393L0
+        383Z"
         fill="#004cbb"></path>
-      <path
-        d="M0 547L16.7 544C33.3 541 66.7 535 100 537C133.3 539 166.7 549 200
-        552C233.3 555 266.7 551 300 548C333.3 545 366.7 543 400 538C433.3 533
-        466.7 525 500 522C533.3 519 566.7 521 600 528C633.3 535 666.7 547 700
-        551C733.3 555 766.7 551 800 546C833.3 541 866.7 535 883.3 532L900
-        529L900 473L883.3 478C866.7 483 833.3 493 800 486C766.7 479 733.3 455
-        700 449C666.7 443 633.3 455 600 459C566.7 463 533.3 459 500 461C466.7
-        463 433.3 471 400 478C366.7 485 333.3 491 300 488C266.7 485 233.3 473
-        200 460C166.7 447 133.3 433 100 437C66.7 441 33.3 463 16.7 474L0 485Z"
-        fill="#005fee"></path>
-      <path
-        d="M0 601L16.7 601C33.3 601 66.7 601 100 601C133.3 601 166.7 601 200
-        601C233.3 601 266.7 601 300 601C333.3 601 366.7 601 400 601C433.3 601
-        466.7 601 500 601C533.3 601 566.7 601 600 601C633.3 601 666.7 601 700
-        601C733.3 601 766.7 601 800 601C833.3 601 866.7 601 883.3 601L900
-        601L900 527L883.3 530C866.7 533 833.3 539 800 544C766.7 549 733.3 553
-        700 549C666.7 545 633.3 533 600 526C566.7 519 533.3 517 500 520C466.7
-        523 433.3 531 400 536C366.7 541 333.3 543 300 546C266.7 549 233.3 553
-        200 550C166.7 547 133.3 537 100 535C66.7 533 33.3 539 16.7 542L0 545Z"
-        fill="#6198ff"></path>
     </svg>
   </section>
   <!--Background End-->
@@ -567,7 +545,7 @@
     <!--Title-->
     <section>
       <div class="container">
-        <h1 id="title-font">Little Dessert Shop Home Page</h1>
+        <h1 id="title-font">Little Dessert Shop Store Page</h1>
         <svg
           class="line-div"
           version="1.0"
@@ -577,8 +555,7 @@
           <g
             transform="translate(0.000000,640.000000) scale(0.100000,-0.100000)"
             stroke="none">
-            <path
-              d="M758 3889 c-271 -33 -507 -150 -631 -310 -175 -228 -166 -576
+            <path d="M758 3889 c-271 -33 -507 -150 -631 -310 -175 -228 -166 -576
               20
               -766 91 -93 232 -142 374 -128 196 18 324 101 398 255 35 73 36 78
               36 195 0
@@ -593,8 +570,7 @@
               268 97 474 103 276 9 497 -35 827 -163 48 -19 91 -34 96 -34 4 0 23
               13 42 28
               l34 29 -130 50 c-320 126 -516 171 -764 178 -91 2 -199 0 -242 -6z"></path>
-            <path
-              d="M11663 3890 c-168 -18 -383 -77 -627 -173 l-130 -50 34 -29
+            <path d="M11663 3890 c-168 -18 -383 -77 -627 -173 l-130 -50 34 -29
               c19 -15
               38 -28 42 -28 4 0 31 10 60 21 197 79 412 140 580 165 166 24 415 15
               558 -21
@@ -609,8 +585,7 @@
               -187 0 -117 1 -122 36 -195 57 -119 157 -203 283 -236 248 -66 473
               24 574 229
               101 205 75 459 -67 647 -176 234 -573 356 -1008 310z"></path>
-            <path
-              d="M4548 3861 c-75 -24 -118 -52 -172 -112 -61 -68 -81 -130 -80
+            <path d="M4548 3861 c-75 -24 -118 -52 -172 -112 -61 -68 -81 -130 -80
               -249 1
               -105 31 -213 80 -291 14 -23 24 -42 22 -44 -2 -2 -71 35 -153 82
               -389 223
@@ -639,8 +614,7 @@
               54 93 109 151 128 47 17 207 22 228 8 6 -4 24 -35 39 -70 31 -69 55
               -92 97
               -92 58 0 82 60 50 125 -54 112 -260 168 -424 116z"></path>
-            <path
-              d="M8015 3874 c-152 -38 -250 -168 -179 -238 19 -20 63 -21 90
+            <path d="M8015 3874 c-152 -38 -250 -168 -179 -238 19 -20 63 -21 90
               -2 11 8
               33 43 49 78 15 35 33 66 39 70 21 14 181 9 228 -8 58 -19 122 -74
               151 -128 28
@@ -667,208 +641,205 @@
               -151 -84 -153 -82 -2 2 8 21 22 44 49 78 79 186 80 291 1 132 -19
               186 -98 266
               -81 80 -145 106 -276 110 -52 1 -104 1 -115 -2z"></path>
-            <path
-              d="M2058 3560 c-20 -11 -39 -24 -42 -29 -9 -13 498 -237 804
+            <path d="M2058 3560 c-20 -11 -39 -24 -42 -29 -9 -13 498 -237 804
               -354 80
               -30 249 -91 375 -135 127 -44 237 -83 245 -86 8 -4 23 -19 32 -36 33
               -59 148
               -60 156 -2 7 50 -54 87 -260 157 -310 106 -798 295 -1026 396 -135
               60 -245
               109 -246 109 -1 -1 -18 -10 -38 -20z"></path>
-            <path
-              d="M10454 3470 c-224 -100 -707 -287 -1022 -395 -206 -70 -267
+            <path d="M10454 3470 c-224 -100 -707 -287 -1022 -395 -206 -70 -267
               -107
               -260 -157 8 -58 123 -57 156 2 9 17 24 32 32 36 8 3 119 42 245 86
               127 44 295
               105 375 135 307 118 813 341 804 354 -5 9 -80 50 -86 48 -2 0 -112
               -49 -244
               -109z"></path>
-            <path
-              d="M3080 3240 c0 -3 37 -19 83 -35 81 -30 85 -30 340 -35 141 -3
+            <path d="M3080 3240 c0 -3 37 -19 83 -35 81 -30 85 -30 340 -35 141 -3
               257 -2
               257 1 0 4 -28 19 -62 35 l-63 29 -278 5 c-152 3 -277 3 -277 0z"></path>
-            <path
-              d="M9435 3240 l-270 -5 -62 -29 c-35 -16 -63 -31 -63 -35 0 -3
+            <path d="M9435 3240 l-270 -5 -62 -29 c-35 -16 -63 -31 -63 -35 0 -3
               116 -4
               257 -1 255 5 259 5 341 35 45 16 82 33 82 37 0 5 -3 7 -7 6 -5 -1
               -129 -5
               -278 -8z"></path>
-            <path
-              d="M140 3205 l0 -35 341 0 c307 0 341 2 335 16 -3 9 -6 24 -6 35
+            <path d="M140 3205 l0 -35 341 0 c307 0 341 2 335 16 -3 9 -6 24 -6 35
               0 18
               -11 19 -335 19 l-335 0 0 -35z"></path>
-            <path
-              d="M1012 3208 l3 -33 251 -3 251 -2 10 35 11 35 -265 0 -264 0 3
+            <path d="M1012 3208 l3 -33 251 -3 251 -2 10 35 11 35 -265 0 -264 0 3
               -32z"></path>
-            <path
-              d="M1766 3231 c-3 -4 -10 -20 -15 -34 l-10 -27 469 -2 c259 -2
+            <path d="M1766 3231 c-3 -4 -10 -20 -15 -34 l-10 -27 469 -2 c259 -2
               470 -1
               470 2 0 3 -37 20 -83 38 l-83 32 -371 0 c-205 0 -374 -4 -377 -9z"></path>
-            <path
-              d="M4546 3205 l26 -35 799 0 799 0 0 35 0 35 -826 0 -825 0 27
+            <path d="M4546 3205 l26 -35 799 0 799 0 0 35 0 35 -826 0 -825 0 27
               -35z"></path>
-            <path
-              d="M6630 3205 l0 -35 799 0 799 0 26 35 27 35 -825 0 -826 0 0
+            <path d="M6630 3205 l0 -35 799 0 799 0 26 35 27 35 -825 0 -826 0 0
               -35z"></path>
-            <path
-              d="M10198 3207 c-43 -18 -78 -34 -78 -37 0 -3 211 -4 470 -2
+            <path d="M10198 3207 c-43 -18 -78 -34 -78 -37 0 -3 211 -4 470 -2
               l470 2 -13
               33 -13 32 -380 2 -379 1 -77 -31z"></path>
-            <path
-              d="M11273 3205 l10 -35 248 0 c265 0 259 -1 259 51 0 18 -10 19
+            <path d="M11273 3205 l10 -35 248 0 c265 0 259 -1 259 51 0 18 -10 19
               -264 19
               l-264 0 11 -35z"></path>
-            <path
-              d="M11990 3221 c0 -11 -3 -26 -6 -35 -6 -14 28 -16 335 -16 l341
+            <path d="M11990 3221 c0 -11 -3 -26 -6 -35 -6 -14 28 -16 335 -16 l341
               0 0 35
               0 35 -335 0 c-324 0 -335 -1 -335 -19z"></path>
           </g>
         </svg>
       </div>
     </section>
+    <!--Title End-->
 
-    <!--Image Slider-->
+    <!--Embedded Map-->
     <section>
-      <div class="slidecon">
-        <div class="slider">
-          <div class="slides">
-            <!--Radio Buttons Start-->
-            <input type="radio" name="radio-btn" id="radio1" />
-            <input type="radio" name="radio-btn" id="radio2" />
-            <input type="radio" name="radio-btn" id="radio3" />
-            <input type="radio" name="radio-btn" id="radio4" />
-            <!--Radio Buttons End-->
-            <!--Slide Images Start-->
-            <div class="slide first">
-              <img
-                src="/Images/Slide Show Images/Image-1.png"
-                alt="Little Desert Shop logo"
-                />
-            </div>
-            <div class="slide">
-              <img
-                src="/Images/Slide Show Images/Image-2.png"
-                alt="Ice Cream Desert Plate"
-                />
-            </div>
-            <div class="slide">
-              <img
-                src="/Images/Slide Show Images/Image-3.png"
-                alt="Chocolate chaos"
-                />
-            </div>
-            <div class="slide">
-              <img
-                src="/Images/Slide Show Images/Image-4.png"
-                alt="Little Desert Shop Logo 2"
-                />
-            </div>
-            <!--Slide Images End-->
-            <!--Automatic Navigation Start-->
-            <div class="navigation-auto">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
-              <div class="auto-btn4"></div>
-            </div>
-            <!--Automatic Navigation End-->
-          </div>
-          <!--Manual Navigation Start-->
-          <div class="navigation-manual" class="buttons">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-          </div>
-          <!--Manual Navigation End-->
-        </div>
-        <!--Image Slider End-->
-
-        <!--JavaScript for Timer-->
-        <script type="text/javascript">
-          var counter = 1;
-          setInterval(function () {
-            document.getElementById("radio" + counter).checked = true;
-            counter++;
-            if (counter > 4) {
-              counter = 1;
-            }
-          }, 7000);
-        </script>
+      <div id="map">
+        <iframe src="https://www.google.com/maps/d/embed?mid=147v-GNoZiL1Qka4jcv5dFZkODI9x2rs&ehbc=2E312F" allow="geolocation" width="95%" height="750px" frameborder="0" scrolling="no" allowfullscreen></iframe>
       </div>
-      <!--JavaScript End-->
     </section>
-    <!--Image Slider End-->
+    <!--Embedded Map End-->
 
     <!-- Page information-->
-    <section>
-      <div class="home-page-text">
-        <p><font size="+3">Welcome to the Little Dessert Shop website!</font></p>
-        <div class="text-box" style="margin-bottom: 75px;">
-          <p style="transition: 0s;">
-            Discover the nation’s favourite dessert brand Little Dessert Shop® & embark on a journey of pure indulgence.<br>
-            Little Dessert Shop® is an award-winning brand that has continued to innovate to become the leading trendsetter in the UK since 2015. Serving handcrafted artisanal waffles, crepes, coffee, cheesecakes, cookie dough & gelato combined with our unrivalled dining experience to offer an experience like no other…<br>
-            Prepare to lose yourself, delve into a new taste sensation like never before & explore a new world of creations. Our irresistible dishes are lovingly hand crafted & made just for you.<br>
-            Whether it’s a catch up with a friend, a birthday or a celebration, the Little Dessert Shop® is the perfect place to indulge in life’s sweet moments.
-          </p>
-        </div>
-
-        <!--Info Cards-->
-        <section>
-          <div class="card-body">
-            <div class="card-con">
-              <div class="cards">
-                <div class="card-image">
-                  <img src="/Images/Other/People smiling with ice cream.jpg" />
-                </div>
-                <div class="card-detail">
-                  <h1>Paul & Pauline</h1>
-                  <p>
-                    "The Ice creams and cakes are too die for! They are literally the best desserts I have ever ever had!"
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-con">
-              <div class="cards">
-                <div class="card-image">
-                  <img src="/Images/Shop location/People holding cake.jpg" />
-                </div>
-                <div class="card-detail">
-                  <h1>Ellie & Chris</h1>
-                  <p>
-                    "Our mission is to provide great customer service and the best desserts in the country to our loyal customers!"
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-con">
-              <div class="cards">
-                <div class="card-image">
-                  <img src="/Images/Other/Guy stangin outside store.jpg" />
-                </div>
-                <div class="card-detail">
-                  <h1>Football Mike</h1>
-                  <p>
-                    "Hard not to become a regular here with amazing customer service and even better food!"
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--Info Cards End-->
-
-        <div class="text-box" style="margin-top: 75px;">
-          <p>
-            AN INNOVATIVE BAKERY<br>
-            Always striving for perfection, our artisanal bakers only use the finest ingredients, to lovingly handcraft Italian gelato, American-inspired cheesecakes, brownies & cookie dough. Fuelled with passion, our artisans push boundaries by creating innovative seasonal products that redefine extraordinary taste experiences.<br>
-            The bakery continuously experiments with new tastes, combining fresh ingredients & new recipes producing trendsetting delicacies. Your human senses will be mesmerised with the tantalising works of art by our master artisans.<br>
-            Your Journey Awaits...
-          </p>
+    <div class="home-page-text">
+      <div class="text-box">
+        <p>
+          Using our vision, creativity, innovative and entrepreneurial drive, we have propelled the Little Dessert Shop from strength to strength. Our qualities have been recognised on a local and national level.<br>
+          In November 2015 the Little Dessert Shop won ‘Dessert Outlet of the Year’ at the Food Awards. This was the first year this category had been included. Little Dessert Shop was up against the likes of the prestigious Hotel Chocolat and numerous other dessert restaurants that have been operating within the sector for much longer than Little Dessert Shop. Proving that Little Dessert Shop is the nation's favourite dessert experience!<br>
+          In May 2016 the Little Dessert Shop won ‘Young Business of the Year’ at the Express & Star’s Business Awards. This award was judged by a panel from a large local business, who were impressed by our passion for the brand and its continued success.<br>
+          In September 2016, Little Dessert Shop was nominated for 'Entrepreneur of the Year' at the English Asian Business Awards. The recognition from this award was on a national scale and Little Dessert Shop was so proud to be included in the top ten companies in England.<br>
+        </p>
       </div>
+    </div>
+
+    <!--Info Cards-->
+    <section>
+      <div class="card-body">
+        <a href="https://www.instagram.com/littledessertshop/?hl=en"
+          target="_blank" class="hyper-hider">
+          <div class="card-con">
+            <div class="cards">
+              <div class="card-image">
+                <img src="/Images/Socials/Instagram.png" width="200px" />
+              </div>
+              <div class="card-detail">
+                <h1>Instagram</h1>
+                <p>
+                  Follow us on Instagram!
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <a href="https://www.youtube.com/channel/UCDEDHUkGFcLaBczjUNs3HDQ"
+          target="_blank" class="hyper-hider">
+          <div class="card-con">
+            <div class="cards">
+              <div class="card-image">
+                <img src="/Images/Socials/YouTube.png" width="220px"
+                  />
+              </div>
+              <div class="card-detail">
+                <h1>YouTube</h1>
+                <p>
+                  Follow us on YouTube!
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <a href="https://twitter.com/LittleDessertSh" target="_blank"
+          class="hyper-hider">
+          <div class="card-con">
+            <div class="cards">
+              <div class="card-image">
+                <img src="/Images/Socials/Twitter.png" width="190px"
+                  />
+              </div>
+              <div class="card-detail">
+                <h1>Twitter</h1>
+                <p>
+                  Follow us on Twitter!
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
+    <!--Info Cards End-->
+
+    <div class="home-page-text">
+      <div class="text-box">
+        <p>
+          Fast forward, and Little Dessert Shop have continued to expand their awards portfolio, including 'Best Newcomer' at Intu & Small Business Awards with the Express & Star in 2017. In 2018, Little Dessert Shop won 'Business Start-Up of the Year' & were runners-up for 'Dessert Outlet of the Year' at the National Food Awards once again.<br>
+          The Little Dessert Shop brand has continually evolved since 2014, becoming the UK's leading dessert dining experience. The expansion of our operations has been pivotal to the growth of the brand, with a new head office, in house central bakery & logistical distribution supply.<br>
+          Little Dessert Shop continues to place innovation & creativity at the core of the business model.<br>
+          Little Dessert Shop management have built up extensive experience in business for over 20 years, across a variety of fields. The departments are split into accounting, operations, human resources & marketing. The team of talented professionals are dedicated to providing support for the stores, providing best practice, quality control & training to ensure our network achieve an optimum level of hygiene, customer service & sales.<br>
+          Our team continues to expand to provide the sweetest experience in our stores.
+        </p>
+      </div>
+    </div>
+
+    <!--Contact Form-->
+    <section id="formSection">
+      <div class="formCon">
+          <div class="contactInfo">
+              <div>
+                  <h2>Contact Info</h2>
+                  <ul class="info">
+                      <li>
+                          <span><img src="/Images/Icons/Form Icons/location.png"></span>
+                          <span>50 Wolverhampton Road Wednesfield, Wolverhampton WV11 1UJ</span>
+                      </li>
+                      <li>
+                          <span><img src="/Images/Icons/Form Icons/mail.png"></span>
+                          <span>digital@littledessertshop.co.uk</span>
+                      </li>
+                      <li>
+                          <span><img src="/Images/Icons/Form Icons/call.png"></span>
+                          <span>01902 424000</span>
+                      </li>
+                  </ul>
+              </div>
+              <ul class="sci">
+                  <li><a href="https://www.facebook.com/LittleDessertShopUK/"><img src="/Images/Icons/Form Icons/1.png"></a></li>
+                  <li><a href="https://twitter.com/LittleDessertSh"><img src="/Images/Icons/Form Icons/2.png"></a></li>
+                  <li><a href="https://www.instagram.com/littledessertshop/?hl=en"><img src="/Images/Icons/Form Icons/3.png"></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCDEDHUkGFcLaBczjUNs3HDQ"><img src="/Images/Icons/Form Icons/YouTube.png"></a></li>
+                  <li><a href="https://uk.linkedin.com/company/little-dessert-shop"><img src="/Images/Icons/Form Icons/5.png"></a></li>
+              </ul>
+          </div>
+          <div class="contactForm">
+              <h2>Send a Message</h2>
+              <div class="formBox">
+                  <div class="inputBox w50">
+                      <input type="text" required>
+                      <span>First Name</span>
+                  </div>
+                  <div class="inputBox w50">
+                      <input type="text" required>
+                      <span>Last Name</span>
+                  </div>
+                  <div class="inputBox w50">
+                      <input type="text" required>
+                      <span>Email Address</span>
+                  </div>
+                  <div class="inputBox w50">
+                      <input type="text" required>
+                      <span>Mobile Number</span>
+                  </div>
+                  <div class="inputBox w100">
+                      <textarea required></textarea>
+                      <span>Write you message here...</span>
+                  </div>
+                  <div class="inputBox w100">
+                      <a href="/Store.html"><input type="submit" value="Send"></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!--Contact Form End-->
+
     <!-- Page information End-->
   </main>
 </body>

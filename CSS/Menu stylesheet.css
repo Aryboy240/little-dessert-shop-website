@@ -1,0 +1,334 @@
+/* Menu Zoom */
+
+.top-vid {
+  width: 60%;
+  max-width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 40px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+#picture {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#picture:hover {
+  opacity: 0.7s;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+}
+
+.modal::-webkit-scrollbar {
+  overflow: hidden;
+}
+
+.modal::-webkit-scrollbar-track {
+  overflow: hidden;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  overflow: hidden;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 500px;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  z-index: 500;
+}
+
+#fullPicture {
+  border-radius: 50px;
+}
+
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  color: white;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.close {
+  position: absolute;
+  top: -60px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 150px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition-speed);
+}
+
+.close:hover {
+  color: red;
+  transition: var(--transition-speed);
+}
+
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.download {
+  position: absolute;
+  bottom: 150px;
+  right: 35px;
+  margin: auto;
+  color: white;
+  z-index: 102;
+  transition: var(--transition-speed);
+}
+
+.download:hover {
+  color: lime;
+  transition: var(--transition-speed);
+}
+
+/* Menu - Card */
+
+.Menu-card-body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Menu-card-con {
+  position: relative;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Menu-cards {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: var(--bg-secondary);
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: var(--transition-speed);
+}
+
+.Menu-cards:hover {
+  width: 1200px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Menu-card-image {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  max-width: 260px;
+  bottom: -15px;
+  left: 20px;
+  z-index: 1;
+  transition: var(--transition-speed);
+}
+
+.Menu-card-image img {
+  justify-items: center;
+  align-items: center;
+  border-radius: 20px;
+  max-width: 100%;
+  height: 100%;
+  top: -60px;
+  float: left;
+}
+
+.Menu-card-detail {
+  top: -100;
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: var(--text-secondary);
+  visibility: hidden;
+  opacity: 0;
+  color: var(--text-secondary);
+  transition: var(--transition-speed);
+}
+
+.Menu-cards:hover .Menu-card-detail {
+  visibility: visible;
+  opacity: 1;
+  margin-left: 250px;
+}
+
+/* Little Boi Screens */
+@media only screen and (max-width: 1200px) {
+  .Menu-cards:hover {
+    width: 500px;
+  }
+
+  .Menu-card-body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Menu-card-con {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+
+  .Menu-cards {
+    position: relative;
+    min-width: 300px;
+    max-width: 300px;
+    height: 400px;
+    background: var(--bg-secondary);
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    transition: var(--transition-speed);
+  }
+
+  .Menu-cards:hover {
+    height: 650px;
+    transition: var(--transition-speed);
+  }
+
+  .Menu-card-image {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    max-width: 260px;
+    top: 15px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 3px 50px rgba(0, 0, 0, 0);
+  }
+
+  .Menu-card-image img {
+    justify-items: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+    top: -60px;
+  }
+
+  .Menu-card-detail {
+    top: 0;
+    position: relative;
+    text-align: center;
+    margin-top: 0px;
+    padding: 10px 15px;
+    color: var(--text-secondary);
+    visibility: hidden;
+    opacity: 0;
+    color: var(--text-secondary);
+    transition: 0.35s;
+  }
+
+  .drink-card-detail {
+    top: 0;
+    position: relative;
+    text-align: center;
+    margin-top: 0px;
+    padding: 10px 15px;
+    color: var(--text-secondary);
+    visibility: hidden;
+    opacity: 0;
+    color: var(--text-secondary);
+    transition: 0.35s;
+  }
+
+  .Menu-cards:hover .Menu-card-detail {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 50px;
+    margin-left: 0px;
+    transition: var(--transition-speed);
+  }
+
+  .Menu-cards:hover .drink-card-detail {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 50px;
+    margin-left: 0px;
+    transition: var(--transition-speed);
+  }
+
+  .Menu-cards:hover .birthday-card-detail {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 50px;
+    margin-left: 0px;
+    transition: var(--transition-speed);
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .top-vid {
+    width: 100%;
+  }
+}
