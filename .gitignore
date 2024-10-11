@@ -2,3 +2,6 @@ Photoshop Projects
 Images
 svgs
 Videos
+.gitignore
+.gitattributes
+*.url
